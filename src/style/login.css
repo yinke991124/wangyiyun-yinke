@@ -1,0 +1,383 @@
+#wangyi > .topout {
+  width: 100%;
+  height: 70px;
+  float: left;
+  background: #242424;
+  position: relative;
+}
+#wangyi > .topout > .topin {
+  width: 1100px;
+  height: 70px;
+  margin: auto;
+  overflow: hidden;
+  background: #242424;
+}
+#wangyi > .topout > .topin > .logo {
+  display: block;
+  width: 170px;
+  height: 70px;
+  text-align: center;
+  float: left;
+}
+#wangyi > .topout > .topin > .logo > span {
+  line-height: 70px;
+  color: white;
+}
+#wangyi > .topout > .topin > .logo > span:nth-of-type(2) {
+  font-size: 22px;
+  font-family: Arial, Helvetica, sans-serif, "幼圆", "楷书";
+  font-weight: 400;
+  text-shadow: #ccc 0 0 5px;
+  letter-spacing: 5px;
+  vertical-align: middle;
+}
+#wangyi > .topout > .topin > .logo > span:nth-of-type(1) {
+  color: #e62225;
+  vertical-align: middle;
+  font-size: 30px;
+}
+#wangyi > .topout > .topin > .menu {
+  float: left;
+  height: 70px;
+  line-height: 70px;
+  margin-left: 10px;
+}
+#wangyi > .topout > .topin > .menu > li {
+  float: left;
+  padding: 0 20px;
+  position: relative;
+}
+#wangyi > .topout > .topin > .menu > li:hover {
+  background: black;
+}
+#wangyi > .topout > .topin > .menu > li > a {
+  color: #ccc;
+}
+#wangyi > .topout > .topin > .menu > li > a > span {
+  font-size: 14px;
+}
+#wangyi > .topout > .topin > .menu > li > sup {
+  position: absolute;
+  top: -10px;
+  right: -30px;
+}
+#wangyi > .topout > .topin > .menu > li > sup > .iconfont {
+  color: #e62225;
+  font-size: 14px;
+}
+#wangyi > .topout > .topin > .search {
+  width: 158px;
+  height: 32px;
+  border: 1px solid #ccc;
+  background: white;
+  margin-top: 20px;
+  border-radius: 25px;
+  float: left;
+  margin-left: 80px;
+  position: relative;
+}
+#wangyi > .topout > .topin > .search > input {
+  width: 115px;
+  height: 16px;
+  border: none;
+  position: absolute;
+  top: 8px;
+  left: 35px;
+  outline: none;
+}
+#wangyi > .topout > .topin > .search > .iconsousuo {
+  font-size: 24px;
+  font-weight: bolder;
+  color: #ccc;
+  position: absolute;
+  top: 4px;
+  left: 7px;
+}
+#wangyi > .topout > .topin > .creater {
+  width: 90px;
+  height: 32px;
+  line-height: 32px;
+  border: 1px solid #4f4f4f;
+  border-radius: 20px;
+  float: left;
+  padding-bottom: 16px;
+  margin: 20px 20px 0 12px;
+  text-align: center;
+  color: #ccc;
+  font-size: 12px;
+}
+#wangyi > .topout > .topin > .creater:hover {
+  border: 1px solid white;
+  color: white;
+}
+#wangyi > .topout > .topin > aside {
+  float: left;
+  text-align: center;
+  margin-top: 20px;
+  overflow: hidden;
+}
+#wangyi > .topout > .topin > aside > span {
+  height: 32px;
+  font-size: 12px;
+  color: #666464;
+  line-height: 32px;
+}
+#wangyi > .topout > .topin > aside > span:hover {
+  text-decoration: underline;
+  color: #817f7f;
+}
+#wangyi > .topout > .topin > aside:hover .other {
+  display: block;
+}
+#wangyi > .topout > .topin > aside > .other {
+  width: 540px;
+  height: 400px;
+  position: fixed;
+  top: 150px;
+  left: 450px;
+  display: none;
+  background: white;
+  box-shadow: 0 5px 16px rgba(0, 0, 0, 0.8);
+}
+#wangyi > .topout > .topin > aside > .other > p {
+  width: 540px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 16px;
+  border-radius: 5px;
+  position: absolute;
+  top: -10px;
+  background: #222222;
+  color: #ccc;
+  text-indent: 10px;
+}
+#wangyi > .topout > .topin > aside > .other > .enter {
+  margin-top: 100px;
+}
+#wangyi > .topout > .topin > aside > .other > .enter > .left {
+  width: 300px;
+  height: 200px;
+  border-right: 1px dotted #ccc;
+  padding: 0 40px;
+  float: left;
+}
+#wangyi > .topout > .topin > aside > .other > .enter > .left > article {
+  width: 224px;
+  height: 120px;
+  background: url(../img/computer.png) no-repeat;
+  background-size: contain;
+}
+#wangyi > .topout > .topin > aside > .other > .enter > .left > section {
+  width: 224px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  font-size: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+#wangyi > .topout > .topin > aside > .other > .enter > .left > section:nth-of-type(1) {
+  color: white;
+  background: #06b1f5;
+}
+#wangyi > .topout > .topin > aside > .other > .enter > .left > section:nth-of-type(1):hover {
+  background: rgba(6, 177, 245, 0.7);
+}
+#wangyi > .topout > .topin > aside > .other > .enter > .left > section:nth-of-type(2) {
+  color: white;
+  background: #dad7d7;
+}
+#wangyi > .topout > .topin > aside > .other > .enter > .left > section:nth-of-type(2):hover {
+  background: #eeeded;
+}
+#wangyi > .topout > .topin > aside > .other > .enter > .right {
+  float: left;
+  width: 187px;
+  height: 220px;
+  margin-top: -15px;
+  padding: 3px 0 3px 40px;
+}
+#wangyi > .topout > .topin > aside > .other > .enter > .right > .choice > li {
+  padding: 12px 0;
+  text-align: left;
+}
+#wangyi > .topout > .topin > aside > .other > .enter > .right > .choice > li > .iconfont {
+  vertical-align: middle;
+  font-size: 30px;
+  color: #e62225;
+}
+#wangyi > .topout > .topin > aside > .other > .enter > .right > .choice > li > a {
+  vertical-align: middle;
+  margin-right: 20px;
+}
+#wangyi > .topout > .topin > aside > .other > .enter > .right > .choice > li > a > span {
+  font-size: 12px;
+}
+#wangyi > .topout > .topin > aside > .other > .enter > .right > .choice > li > a:hover {
+  text-decoration: underline;
+}
+#wangyi > .topout > .topin > aside > .other > .enter > .right > .choice > li:nth-of-type(1) > .iconfont {
+  color: yellowgreen;
+}
+#wangyi > .topout > .topin > aside > .other > .enter > .right > .choice > li:nth-of-type(2) > .iconfont {
+  color: #1997c9;
+}
+#wangyi > .topout > .topin > aside > .other > .enter > .bottom {
+  white-space: nowrap;
+  float: left;
+  margin-left: 40px;
+  margin-top: 30px;
+  font-family: NotoSansHans-Regular;
+  font-size: 10px;
+  color: rgba(0, 0, 0, 0.4);
+  line-height: 15px;
+}
+#wangyi > .topout > .topin > aside > .other > .enter > .bottom > input {
+  font-size: 12px;
+  color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#wangyi > .topout > .topin > aside > .other > .enter > .bottom > a {
+  color: #17a6df;
+}
+#wangyi > .topout > .topin > aside > .other > .enter > .bottom > a:hover {
+  text-decoration: underline;
+}
+#wangyi > .lineout {
+  width: 100%;
+  height: 5px;
+  background: #e62225;
+  float: left;
+}
+#wangyi > .lineout > .linein {
+  width: 1100px;
+  height: 5px;
+  background: #e62225;
+}
+#wangyi > .mainout {
+  width: 100%;
+  float: left;
+  border-bottom: 1px solid #ccc;
+}
+#wangyi > .mainout > .mainin {
+  width: 1100px;
+  height: 700px;
+  padding: 60px;
+  margin: auto;
+  border: 1px solid #ccc;
+  border-top: transparent;
+  border-bottom: transparent;
+}
+#wangyi > .mainout > .mainin > h1 {
+  height: 66px;
+  line-height: 66px;
+  text-align: center;
+  font-size: 22px;
+  color: #333333;
+}
+#wangyi > .mainout > .mainin > .enter {
+  width: 540px;
+  height: 330px;
+  padding: 40px 0;
+  margin: auto;
+  border: 1px solid #ccc;
+  box-shadow: 2px 1px 10px #ccc;
+}
+#wangyi > .mainout > .mainin > .enter > .left {
+  width: 300px;
+  height: 200px;
+  border-right: 1px dotted #ccc;
+  padding: 0 40px;
+  float: left;
+}
+#wangyi > .mainout > .mainin > .enter > .left > article {
+  width: 224px;
+  height: 120px;
+  background: url(../img/computer.png) no-repeat;
+  background-size: contain;
+}
+#wangyi > .mainout > .mainin > .enter > .left > section {
+  width: 224px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  font-size: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+#wangyi > .mainout > .mainin > .enter > .left > section:nth-of-type(1) {
+  color: white;
+  background: #06b1f5;
+}
+#wangyi > .mainout > .mainin > .enter > .left > section:nth-of-type(1):hover {
+  background: rgba(6, 177, 245, 0.7);
+}
+#wangyi > .mainout > .mainin > .enter > .left > section:nth-of-type(2) {
+  color: white;
+  background: #dad7d7;
+}
+#wangyi > .mainout > .mainin > .enter > .left > section:nth-of-type(2):hover {
+  background: #eeeded;
+}
+#wangyi > .mainout > .mainin > .enter > .right {
+  float: left;
+  width: 187px;
+  height: 220px;
+  margin-top: -15px;
+  padding: 3px 0 3px 40px;
+}
+#wangyi > .mainout > .mainin > .enter > .right > .choice > li {
+  padding: 12px 0;
+}
+#wangyi > .mainout > .mainin > .enter > .right > .choice > li > .iconfont {
+  vertical-align: middle;
+  font-size: 30px;
+  color: #e62225;
+}
+#wangyi > .mainout > .mainin > .enter > .right > .choice > li > a {
+  vertical-align: middle;
+  margin-right: 10px;
+}
+#wangyi > .mainout > .mainin > .enter > .right > .choice > li > a > span {
+  font-size: 12px;
+}
+#wangyi > .mainout > .mainin > .enter > .right > .choice > li > a:hover {
+  text-decoration: underline;
+}
+#wangyi > .mainout > .mainin > .enter > .right > .choice > li:nth-of-type(1) > .iconfont {
+  color: yellowgreen;
+}
+#wangyi > .mainout > .mainin > .enter > .right > .choice > li:nth-of-type(2) > .iconfont {
+  color: #1997c9;
+}
+#wangyi > .mainout > .mainin > .enter > .bottom {
+  white-space: nowrap;
+  float: left;
+  margin-left: 40px;
+  margin-top: 30px;
+  font-family: NotoSansHans-Regular;
+  font-size: 10px;
+  color: rgba(0, 0, 0, 0.4);
+  line-height: 15px;
+}
+#wangyi > .mainout > .mainin > .enter > .bottom > input {
+  font-size: 12px;
+  color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#wangyi > .mainout > .mainin > .enter > .bottom > a {
+  color: #17a6df;
+}
+#wangyi > .mainout > .mainin > .enter > .bottom > a:hover {
+  text-decoration: underline;
+}
+#wangyi > footer > .footerin > .copy > p:nth-of-type(3) {
+  float: left;
+  color: #666666;
+  margin-top: 10px;
+}
+#wangyi > footer > .footerin > .copy > p > a {
+  color: #666666;
+}
