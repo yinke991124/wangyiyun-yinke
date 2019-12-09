@@ -1,0 +1,25 @@
+#wangyi > .headerout > .headerin {
+  border-bottom: 1px solid #ccc;
+}
+#wangyi > .newout {
+  width: 100%;
+  float: left;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+#wangyi > .newout > .newin {
+  width: 1100px;
+  margin: auto;
+}
+#wangyi > .newout > .newin > h4 {
+  width: 100%;
+  font-size: 26px;
+}
+#wangyi > .newout > .newin > ul {
+  width: 100%;
+  margin-top: 30px;
+}
+#wangyi > .newout > .newin > ul > li {
+  float: left;
+  background: #f9f9f9;
+}

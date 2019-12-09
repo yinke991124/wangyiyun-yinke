@@ -1,7 +1,6 @@
 {
   "name": "wangyiyun-yinke",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "directories": {
     "lib": "lib"
@@ -11,5 +10,20 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "^3.4.1",
+    "require": "^2.4.20",
+    "requirejs": "^2.3.6"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yinke991124/wangyiyun-yinke.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yinke991124/wangyiyun-yinke/issues"
+  },
+  "homepage": "https://github.com/yinke991124/wangyiyun-yinke#readme",
+  "description": ""
 }

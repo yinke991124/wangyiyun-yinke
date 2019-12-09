@@ -109,39 +109,126 @@
   text-align: center;
   position: relative;
 }
-#wangyi > .carout > .carin > .detail > .others > .center > li:nth-last-of-type(1) {
-  height: 50px;
-  border-top: 1px solid #ccc;
-  position: relative;
+#wangyi > .carout > .carin > .detail > .others > .center > li > .inp {
+  position: absolute;
+  top: 50px;
 }
-#wangyi > .carout > .carin > .detail > .others > .center > li:nth-last-of-type(1) > .inp {
-  margin-top: 15px;
+#wangyi > .carout > .carin > .detail > .others > .center > li > .inp > input {
+  width: 20px;
+  height: 20px;
 }
-#wangyi > .carout > .carin > .detail > .others > .center > li:nth-last-of-type(1) > span {
-  width: 100px;
+#wangyi > .carout > .carin > .detail > .others > .center > li > .right {
+  margin-top: 20px;
+  margin-left: 10px;
+  position: absolute;
+  top: 0px;
+  left: 30px;
+}
+#wangyi > .carout > .carin > .detail > .others > .center > li > .right > img {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+#wangyi > .carout > .carin > .detail > .others > .center > li > .right > .des {
+  width: 200px;
+  position: absolute;
+  top: 20px;
+  left: 100px;
+}
+#wangyi > .carout > .carin > .detail > .others > .center > li > .right > .des > a {
   float: left;
+  display: block;
+  width: 200px;
+  height: 30px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-weight: 100;
+}
+#wangyi > .carout > .carin > .detail > .others > .center > li > .right > .des > p {
+  width: 200px;
+  float: left;
+  text-align: left;
+  text-indent: 10px;
   color: #ccc;
-  font-size: 14px;
-  margin-top: 15px;
+  font-weight: 100;
 }
-#wangyi > .carout > .carin > .detail > .others > .center > li:nth-last-of-type(1) > .des {
+#wangyi > .carout > .carin > .detail > .others > .center > li > .right > .sinPr {
+  position: absolute;
+  top: 20px;
+  left: 577px;
+}
+#wangyi > .carout > .carin > .detail > .others > .center > li > .right > .count {
+  width: 110px;
+  height: 30px;
+  border: 1px solid #e5e5e5;
+  position: absolute;
+  top: 20px;
+  left: 685px;
+  user-select: none;
+}
+#wangyi > .carout > .carin > .detail > .others > .center > li > .right > .count > .num {
+  display: block;
+  text-align: center;
+  width: 110px;
+  height: 28px;
+  border: none;
+  outline: none;
+}
+#wangyi > .carout > .carin > .detail > .others > .center > li > .right > .sumPr {
+  position: absolute;
+  top: 20px;
+  left: 900px;
+}
+#wangyi > .carout > .carin > .detail > .others > .center > li > .right > .del {
+  font-size: 20px;
+  color: orangered;
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  left: 1000px;
+}
+#wangyi > .carout > .carin > .detail > .others > .center > .last {
+  width: 100%;
+  padding: 0;
+  height: 90px;
+}
+#wangyi > .carout > .carin > .detail > .others > .center > .last > .bottom {
+  padding: 10px 0;
+  height: 50px;
   float: left;
-  width: 450px;
+  width: 100%;
+  border-top: 1px solid #ccc;
+}
+#wangyi > .carout > .carin > .detail > .others > .center > .last > .bottom > #concel {
+  width: 100px;
+  height: 20px;
+  float: left;
+  margin-top: 15px;
+  margin-left: 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+#wangyi > .carout > .carin > .detail > .others > .center > .last > .bottom > .des {
+  float: left;
+  width: 400px;
   margin-left: 10px;
   text-align: left;
   color: #ccc;
   margin-top: 15px;
 }
-#wangyi > .carout > .carin > .detail > .others > .center > li:nth-last-of-type(1) > .des > em {
+#wangyi > .carout > .carin > .detail > .others > .center > .last > .bottom > .des > em {
   color: #e62225;
   padding: 10px;
 }
-#wangyi > .carout > .carin > .detail > .others > .center > li:nth-last-of-type(1) > .right {
+#wangyi > .carout > .carin > .detail > .others > .center > .last > .bottom > .right {
   float: left;
-  margin-top: 15px;
-  margin-left: 100px;
+  padding: 20px 0;
+  margin-left: 160px;
 }
-#wangyi > .carout > .carin > .detail > .others > .center > li:nth-last-of-type(1) > .right > span {
+#wangyi > .carout > .carin > .detail > .others > .center > .last > .bottom > .right > span {
   width: 100px;
   float: left;
   text-align: center;
@@ -149,22 +236,22 @@
   line-height: 20px;
   font-size: 14px;
 }
-#wangyi > .carout > .carin > .detail > .others > .center > li:nth-last-of-type(1) > .right > span:nth-of-type(1) {
+#wangyi > .carout > .carin > .detail > .others > .center > .last > .bottom > .right > span:nth-of-type(1) {
   color: #ccc;
 }
-#wangyi > .carout > .carin > .detail > .others > .center > li:nth-last-of-type(1) > .right > span:nth-of-type(2) {
+#wangyi > .carout > .carin > .detail > .others > .center > .last > .bottom > .right > span:nth-of-type(2) {
   width: 1px;
   background: #949393;
 }
-#wangyi > .carout > .carin > .detail > .others > .center > li:nth-last-of-type(1) > .right > span:nth-of-type(3) {
+#wangyi > .carout > .carin > .detail > .others > .center > .last > .bottom > .right > span:nth-of-type(3) {
   margin-left: 10px;
 }
-#wangyi > .carout > .carin > .detail > .others > .center > li:nth-last-of-type(1) > .right > span:nth-of-type(3) > em {
+#wangyi > .carout > .carin > .detail > .others > .center > .last > .bottom > .right > span:nth-of-type(3) > em {
   color: #e62225;
   font-size: 18px;
   font-weight: bold;
 }
-#wangyi > .carout > .carin > .detail > .others > .center > li:nth-last-of-type(1) > .right > span:nth-of-type(4) {
+#wangyi > .carout > .carin > .detail > .others > .center > .last > .bottom > .right > span:nth-of-type(4) {
   float: left;
   width: 140px;
   background: #e62225;
@@ -173,73 +260,6 @@
   font-size: 20px;
   height: 50px;
   line-height: 50px;
-  position: absolute;
-  top: 0;
-  right: 1px;
-}
-#wangyi > .carout > .carin > .detail > .others > .center > li > .inp {
-  float: left;
-  margin-top: 50px;
-}
-#wangyi > .carout > .carin > .detail > .others > .center > li > .inp > input {
-  width: 20px;
-  height: 20px;
-}
-#wangyi > .carout > .carin > .detail > .others > .center > li > .right {
-  float: left;
-  margin-top: 20px;
-  margin-left: 10px;
-}
-#wangyi > .carout > .carin > .detail > .others > .center > li > .right > img {
-  width: 80px;
-  height: 80px;
-  float: left;
-}
-#wangyi > .carout > .carin > .detail > .others > .center > li > .right > .des {
-  float: left;
-  width: 450px;
-  margin-left: 10px;
-  text-align: left;
-}
-#wangyi > .carout > .carin > .detail > .others > .center > li > .right > .des > a {
-  width: 100%;
-  font-size: 16px;
-  float: left;
-  margin-top: 20px;
-}
-#wangyi > .carout > .carin > .detail > .others > .center > li > .right > .des > p {
-  width: 100%;
-  float: left;
-  color: #ccc;
-}
-#wangyi > .carout > .carin > .detail > .others > .center > li > .right > .sinPr {
-  float: left;
-  margin: 20px;
-}
-#wangyi > .carout > .carin > .detail > .others > .center > li > .right > .count {
-  float: left;
-  margin: 15px 50px;
-  border: 1px solid #ccc;
-  border-left: none;
-}
-#wangyi > .carout > .carin > .detail > .others > .center > li > .right > .count > a {
-  float: left;
-  padding: 5px 10px;
-  border-left: 1px solid #ccc;
-}
-#wangyi > .carout > .carin > .detail > .others > .center > li > .right > .count > span {
-  float: left;
-  padding: 5px 10px;
-  border-left: 1px solid #ccc;
-}
-#wangyi > .carout > .carin > .detail > .others > .center > li > .right > .sumPr {
-  float: left;
-  margin: 20px 50px;
-  color: #e62225;
-}
-#wangyi > .carout > .carin > .detail > .others > .center > li > .right > .del {
-  float: left;
-  text-align: center;
-  margin-top: 20px;
-  color: #ccc;
+  margin-top: -15px;
+  margin-left: 17px;
 }

@@ -9,7 +9,9 @@
     <link rel="stylesheet" href="../style/common.css">
     <link rel="stylesheet" href="../style/wangyiyun.css">
     <link rel="stylesheet" href="../style/car.css">
-    <link rel="stylesheet" href="../../node_modules/font/iconfont.css">
+    <link rel="stylesheet" href="../font/iconfont.css">
+    <script src="../../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../../node_modules/requirejs/require.js" data-main="../js/car.main"></script>
 </head>
 
 <body>
@@ -26,7 +28,7 @@
                 </form>
                 <div class="car">
                     <span class="iconfont icongouwuche"></span>
-                    <span class="count">0</span>
+                    <span class="count1">0</span>
                 </div>
                 <div class="login">
                     <span>登录</span>
@@ -38,31 +40,31 @@
                             <!-- 登录方式 -->
                             <ul>
                                 <li>
-                                    <a href="login.html">
+                                    <a href="loginReg.html">
                                         <span class="iconfont iconshouji"></span>
                                         <span>手机号登录</span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="login.html">
+                                    <a href="loginReg.html">
                                         <span class="iconfont iconweixin"></span>
                                         <span>微信登录</span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="login.html">
+                                    <a href="loginReg.html">
                                         <span class="iconfont iconQQ"></span>
                                         <span>QQ登录</span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="login.html">
+                                    <a href="loginReg.html">
                                         <span class="iconfont iconxinlang"></span>
                                         <span>微博登录</span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="login.html">
+                                    <a href="loginReg.html">
                                         <span class="iconfont iconyi"></span>
                                         <span>网易邮箱登录</span>
                                     </a>
@@ -83,7 +85,7 @@
                 <div class="detail">
                     <!-- 第一行 -->
                     <header>
-                        <div><input type="checkbox" name="" id=""></div>
+                        <div><input type="checkbox" name="" id="selectall"></div>
                         <span>全选</span>
                         <span>商品</span>
                         <span>金额</span>
@@ -97,48 +99,30 @@
                         <div class="top">
                             <div class="left">
                                 <span>全部商品</span>
-                                <span class="count">(0)</span>
+                                <!-- <span class="count1">(0)</span> -->
                             </div>
                             <a class="right">
                                 <span class="iconfont iconmanjian"></span>
-                                <span>全场满<em>￥119</em>免运费（还差￥n元）去凑单></span>
+                                <!-- <span>全场满<em>￥119</em>免运费（还差￥n元）去凑单></span> -->
                             </a>
                         </div>
 
                         <ul class="center">
-                            <li>
-                                <div class="inp"><input type="checkbox" name="" id=""></div>
-                                <div class="right">
-                                    <img src="../img/zhuanji.jpg" alt="">
+                            <li class="last">
+                                <div class="bottom">
                                     <div class="des">
-                                        <a href="">网易iyun音乐 运动斜跨包</a>
-                                        <p>color</p>
+                                        <!-- 已选择<em>0</em>件商品 -->
                                     </div>
-                                    <div class="sinPr">￥<em>***</em> </div>
-                                    <div class="count">
-                                        <a href="">-</a>
-                                        <span>NUm</span>
-                                        <a href="">+</a>
+                                    <div class="right" style="margin-left: 300px">
+                                        <span>已享受免运费</span>
+                                        <span></span>
+                                        <span id="sumprice">合计：0</span>
+                                        <span>结算</span>
                                     </div>
-                                    <div class="sumPr">￥<em>***</em> </div>
-                                    <div class="del">&times;</div class="del">
                                 </div>
-                            </li>
-                            <li>
-                                <div class="inp"><input type="checkbox" name="" id=""></div>
-                                <span>全选</span>
-                                <div class="des">
-                                    已选择<em>0</em>件商品
-                                </div>
-                                <div class="right">
-                                    <span>已享受免运费</span>
-                                    <span></span>
-                                    <span>合计：<em>￥119</em></span>
-                                    <span>结算</span>
-                                </div>
-
                             </li>
                         </ul>
+
                     </div>
                     <!-- 第二行over -->
                 </div>
@@ -157,7 +141,7 @@
                         <ul>
                             <li>
                                 <a href="">
-                                    <img src="../img/small1.jpg" alt="">
+                                    <img src="../img/middle-s1.jpg" alt="">
                                 </a>
                                 <div class="bottom">
                                     <h3>
@@ -169,7 +153,7 @@
                             </li>
                             <li>
                                 <a href="">
-                                    <img src="../img/small2.jpg" alt="">
+                                    <img src="../img/middle-s2.jpg" alt="">
                                 </a>
                                 <div class="bottom">
                                     <h3>
@@ -182,7 +166,7 @@
 
                             <li>
                                 <a href="">
-                                    <img src="../img/small8.jpg" alt="">
+                                    <img src="../img/middle-s3.jpg" alt="">
                                 </a>
                                 <div class="bottom">
                                     <h3>
@@ -194,7 +178,7 @@
                             </li>
                             <li>
                                 <a href="">
-                                    <img src="../img/small1.jpg" alt="">
+                                    <img src="../img/middle-s4.jpg" alt="">
                                 </a>
                                 <div class="bottom">
                                     <h3>

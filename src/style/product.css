@@ -1,0 +1,491 @@
+#wangyi > .addcarout {
+  width: 100%;
+  height: 70px;
+  display: none;
+  position: fixed;
+  top: 0px;
+  background: white;
+  border-bottom: 1px solid #e6e3e3;
+}
+#wangyi > .addcarout > .addcarin {
+  width: 1100px;
+  height: 70px;
+  padding: 20px 0;
+  margin: auto;
+}
+#wangyi > .addcarout > .addcarin > .img {
+  float: left;
+}
+#wangyi > .addcarout > .addcarin > .img > img {
+  width: 50px;
+  height: 50px;
+}
+#wangyi > .addcarout > .addcarin > .description {
+  float: left;
+  margin-left: 20px;
+  overflow: hidden;
+}
+#wangyi > .addcarout > .addcarin > .description > p:nth-of-type(1) {
+  width: 300px;
+  color: #353333;
+  font-size: 18px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+#wangyi > .addcarout > .addcarin > .description > p:nth-of-type(2) {
+  color: #d33a31;
+}
+#wangyi > .addcarout > .addcarin > .btn {
+  float: right;
+  width: 350px;
+  height: 40px;
+}
+#wangyi > .addcarout > .addcarin > .btn > .buyim {
+  float: left;
+}
+#wangyi > .addcarout > .addcarin > .btn > .buyim > a {
+  display: block;
+  width: 165px;
+  height: 40px;
+  border: 2px solid #d33a31;
+  color: #d33a31;
+  text-align: center;
+  line-height: 36px;
+}
+#wangyi > .addcarout > .addcarin > .btn > .addcar {
+  float: left;
+  background: #d33a31;
+  text-align: center;
+  line-height: 40px;
+}
+#wangyi > .addcarout > .addcarin > .btn > .addcar > a {
+  display: block;
+  width: 165px;
+  height: 40px;
+  color: white;
+}
+#wangyi > .mainout {
+  width: 100%;
+  float: left;
+}
+#wangyi > .mainout > .mainin {
+  width: 1100px;
+  margin: auto;
+}
+#wangyi > .mainout > .mainin > .title {
+  float: left;
+  width: 1100px;
+  height: 80px;
+  padding-top: 30px;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid black;
+  font-weight: 600;
+}
+#wangyi > .mainout > .mainin > .title > a {
+  font-size: 18px;
+  color: #333333;
+}
+#wangyi > .mainout > .mainin > .title > a:nth-of-type(2) {
+  float: right;
+  margin-right: 40px;
+  color: #999999;
+}
+#wangyi > .mainout > .mainin > .title > span {
+  color: #999999;
+  font-size: 16px;
+}
+#wangyi > .mainout > .mainin > .detail {
+  width: 1100px;
+  float: left;
+  margin-top: 20px;
+}
+#wangyi > .mainout > .mainin > .detail > .slider {
+  float: left;
+  width: 440px;
+  height: 600px;
+  position: relative;
+}
+#wangyi > .mainout > .mainin > .detail > .slider .loupe {
+  width: 200px;
+  height: 200px;
+  background: black;
+  opacity: 0.4;
+  position: absolute;
+  z-index: 300;
+  display: none;
+  cursor: move;
+}
+#wangyi > .mainout > .mainin > .detail > .slider > .bigimgout {
+  width: 440px;
+  height: 440px;
+  overflow: hidden;
+  float: left;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+#wangyi > .mainout > .mainin > .detail > .slider > .bigimgout > span {
+  width: 30px;
+  height: 50px;
+  font-size: 40px;
+  color: #ccc;
+  display: none;
+  position: absolute;
+  top: 45%;
+  user-select: none;
+}
+#wangyi > .mainout > .mainin > .detail > .slider > .bigimgout > span:nth-of-type(2) {
+  right: 0;
+}
+#wangyi > .mainout > .mainin > .detail > .slider > .bigimgout:hover span {
+  display: block;
+  z-index: 200;
+}
+#wangyi > .mainout > .mainin > .detail > .slider > .bigimgout > .bigimgin {
+  width: 2200px;
+  height: 440px;
+  float: left;
+  position: absolute;
+  left: 0;
+}
+#wangyi > .mainout > .mainin > .detail > .slider > .bigimgout > .bigimgin > ul {
+  margin: 0;
+  padding: 0;
+}
+#wangyi > .mainout > .mainin > .detail > .slider > .bigimgout > .bigimgin > ul > li > img {
+  width: 440px;
+  height: 440px;
+  float: left;
+}
+#wangyi > .mainout > .mainin > .detail > .slider > .smallimgout {
+  width: 500px;
+  height: 190px;
+  overflow: hidden;
+  padding: 10px 10px;
+  position: relative;
+  top: 75%;
+}
+#wangyi > .mainout > .mainin > .detail > .slider > .smallimgout > .smallimgin {
+  width: 800px;
+  height: 76px;
+  float: left;
+}
+#wangyi > .mainout > .mainin > .detail > .slider > .smallimgout > .smallimgin > ul > li {
+  float: left;
+}
+#wangyi > .mainout > .mainin > .detail > .slider > .smallimgout > .smallimgin > ul > li > img {
+  width: 76px;
+  height: 76px;
+  border: 1px solid #ccc;
+  margin-right: 10px;
+  float: left;
+}
+#wangyi > .mainout > .mainin > .detail > .slider > .smallimgout > .smallimgin > ul .active > img {
+  border: 1px solid orange;
+}
+#wangyi > .mainout > .mainin > .detail .loupeout {
+  width: 440px;
+  height: 536px;
+  background: #333333;
+  position: absolute;
+  left: 45%;
+  z-index: 300;
+  display: none;
+}
+#wangyi > .mainout > .mainin > .detail .loupeout > img {
+  width: 840px;
+  height: 840px;
+}
+#wangyi > .mainout > .mainin > .detail > .right {
+  float: right;
+  width: 580px;
+}
+#wangyi > .mainout > .mainin > .detail > .right > div {
+  width: 100%;
+  padding: 5px 0 5px;
+  float: left;
+}
+#wangyi > .mainout > .mainin > .detail > .right > .title > span {
+  font-size: 24px;
+}
+#wangyi > .mainout > .mainin > .detail > .right > .information {
+  color: #999999;
+  font-size: 14px;
+}
+#wangyi > .mainout > .mainin > .detail > .right > .price {
+  font-size: 26px;
+  color: #d33a31;
+  font-weight: bolder;
+}
+#wangyi > .mainout > .mainin > .detail > .right > .price > span {
+  font-size: 16px;
+  color: #999999;
+  margin-left: 10px;
+  font-weight: normal;
+  text-decoration: line-through;
+}
+#wangyi > .mainout > .mainin > .detail > .right > .discount {
+  font-size: 12px;
+  columns: #333333;
+}
+#wangyi > .mainout > .mainin > .detail > .right > .discount > span {
+  color: #999999;
+  float: left;
+  margin-top: 7px;
+}
+#wangyi > .mainout > .mainin > .detail > .right > .discount > p {
+  height: 30px;
+  border: 1px solid #f8e2e0;
+  background: #fdf5f4;
+  float: left;
+  margin-left: 10px;
+  padding: 5px 10px;
+}
+#wangyi > .mainout > .mainin > .detail > .right > .discount > p > span {
+  color: #333333;
+  padding: 0 5px;
+}
+#wangyi > .mainout > .mainin > .detail > .right > .discount > p > span:nth-of-type(1) {
+  border: 1px solid #d33a31;
+  color: #d33a31;
+}
+#wangyi > .mainout > .mainin > .detail > .right > .discount > p > a {
+  color: #328ad4;
+}
+#wangyi > .mainout > .mainin > .detail > .right > .discountnone {
+  display: none;
+}
+#wangyi > .mainout > .mainin > .detail > .right > .style > span,
+#wangyi > .mainout > .mainin > .detail > .right > .color > span,
+#wangyi > .mainout > .mainin > .detail > .right > .norms > span,
+#wangyi > .mainout > .mainin > .detail > .right > .material > span {
+  color: #999999;
+  font-size: 12px;
+  margin-top: 27px;
+  float: left;
+}
+#wangyi > .mainout > .mainin > .detail > .right > .style > ul > li,
+#wangyi > .mainout > .mainin > .detail > .right > .color > ul > li,
+#wangyi > .mainout > .mainin > .detail > .right > .norms > ul > li,
+#wangyi > .mainout > .mainin > .detail > .right > .material > ul > li {
+  float: left;
+  border: 1px solid #ccc;
+  margin: 20px 10px;
+  padding: 3px 20px;
+  cursor: pointer;
+}
+#wangyi > .mainout > .mainin > .detail > .right > .stylenone,
+#wangyi > .mainout > .mainin > .detail > .right > .colornone,
+#wangyi > .mainout > .mainin > .detail > .right > .normsnone,
+#wangyi > .mainout > .mainin > .detail > .right > .materialnone {
+  display: none;
+}
+#wangyi > .mainout > .mainin > .detail > .right > .num > span {
+  color: #999999;
+  font-size: 12px;
+  margin-top: 27px;
+  float: left;
+}
+#wangyi > .mainout > .mainin > .detail > .right > .num > .count {
+  float: left;
+  border: 1px solid #cccccc;
+  border-left: none;
+  text-align: center;
+  margin: 20px 20px;
+  height: 30px;
+}
+#wangyi > .mainout > .mainin > .detail > .right > .num > .count > span {
+  float: left;
+  width: 50px;
+  height: 28px;
+  line-height: 28px;
+  font-size: 26px;
+  border-left: 1px solid #cccccc;
+  cursor: pointer;
+  user-select: none;
+}
+#wangyi > .mainout > .mainin > .detail > .right > .num > .count > .num {
+  float: left;
+  width: 50px;
+  height: 27px;
+  border: none;
+  border-left: 1px solid #cccccc;
+  outline: none;
+  text-align: center;
+}
+#wangyi > .mainout > .mainin > .detail > .right > .service {
+  color: #999999;
+  font-size: 12px;
+}
+#wangyi > .mainout > .mainin > .detail > .right > .service > span {
+  float: left;
+}
+#wangyi > .mainout > .mainin > .detail > .right > .service > ul {
+  float: left;
+}
+#wangyi > .mainout > .mainin > .detail > .right > .service > ul > li {
+  float: left;
+  margin-left: 30px;
+  white-space: normal;
+  position: relative;
+}
+#wangyi > .mainout > .mainin > .detail > .right > .service > ul > li > a {
+  font-size: 12px;
+}
+#wangyi > .mainout > .mainin > .detail > .right > .service > ul > li > a::after {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: -8px;
+  width: 3px;
+  height: 3px;
+  border-radius: 100%;
+  background-color: #d33931e5;
+}
+#wangyi > .mainout > .mainin > .detail > .right > .servicenone {
+  display: none;
+}
+#wangyi > .mainout > .mainin > .detail > .right > .go {
+  padding: 20px;
+}
+#wangyi > .mainout > .mainin > .detail > .right > .go > .buyim {
+  float: left;
+}
+#wangyi > .mainout > .mainin > .detail > .right > .go > .buyim > a {
+  display: block;
+  width: 165px;
+  height: 40px;
+  border: 2px solid #d33a31;
+  color: #d33a31;
+  text-align: center;
+  line-height: 36px;
+}
+#wangyi > .mainout > .mainin > .detail > .right > .go > .addcar {
+  float: left;
+  width: 165px;
+  height: 40px;
+  background: #d33a31;
+  text-align: center;
+  line-height: 40px;
+  margin-left: 20px;
+}
+#wangyi > .mainout > .mainin > .detail > .right > .go > .addcar > a {
+  color: white;
+}
+#wangyi > .moreout {
+  width: 100%;
+  float: left;
+}
+#wangyi > .moreout > .morein {
+  width: 1100px;
+  margin: auto;
+  margin-top: 50px;
+}
+#wangyi > .moreout > .morein > .left {
+  width: 60%;
+  float: left;
+}
+#wangyi > .moreout > .morein > .left > .title {
+  float: left;
+  width: 100%;
+  height: 80px;
+  padding-top: 30px;
+  border-bottom: 1px solid black;
+  font-weight: 600;
+}
+#wangyi > .moreout > .morein > .left > .title > a {
+  font-size: 18px;
+  color: #333333;
+}
+#wangyi > .moreout > .morein > .left > .title > span {
+  color: #999999;
+  font-size: 16px;
+}
+#wangyi > .moreout > .morein > .left > .show {
+  float: left;
+  width: 100%;
+  margin-top: 20px;
+}
+#wangyi > .moreout > .morein > .left > .some {
+  float: left;
+  width: 100%;
+  height: 150px;
+  border: 1px solid pink;
+  color: pink;
+  border-radius: 10px;
+  margin-top: 20px;
+  line-height: 150px;
+  font-size: 20px;
+  font-family: "幼圆";
+  text-align: center;
+}
+#wangyi > .moreout > .morein > .right {
+  float: left;
+  margin-left: 10%;
+  width: 30%;
+}
+#wangyi > .moreout > .morein > .right > .title {
+  float: left;
+  width: 100%;
+  height: 80px;
+  padding-top: 30px;
+  border-bottom: 1px solid black;
+  font-weight: 600;
+}
+#wangyi > .moreout > .morein > .right > .title > a {
+  font-size: 18px;
+  color: #333333;
+}
+#wangyi > .moreout > .morein > .right > ul {
+  float: left;
+}
+#wangyi > .moreout > .morein > .right > ul > li {
+  padding: 20px 0;
+}
+#wangyi > .moreout > .morein > .right > ul > li > img {
+  width: 100px;
+  height: 100px;
+  margin-right: 20px;
+  float: left;
+}
+#wangyi > .moreout > .morein > .right > ul > li > div {
+  float: left;
+  height: 100px;
+  padding: 20px 0;
+  font-size: 14px;
+}
+#wangyi > .moreout > .morein > .right > ul > li > div > span:nth-of-type(1) {
+  border: 1px solid #d33a31;
+  padding: 0 4px;
+  color: #d33a31;
+}
+#wangyi > .moreout > .morein > .right > ul > li > div > p {
+  margin-top: 30px;
+  font-size: 18px;
+  color: #d33a31;
+}
+#wangyi > .noticeout {
+  width: 100%;
+  float: left;
+  margin-top: 50px;
+}
+#wangyi > .noticeout > .noticein {
+  width: 1100px;
+  margin: auto;
+}
+#wangyi > .noticeout > .noticein > div {
+  width: 100%;
+  float: left;
+  padding: 30px;
+}
+#wangyi > .noticeout > .noticein > div > h4 {
+  font-size: 14px;
+  color: #666;
+  padding: 5px 0;
+}
+#wangyi > .noticeout > .noticein > div > h6 {
+  font-size: 14px;
+  color: #707070;
+  font-weight: normal;
+  padding: 5px 0;
+}

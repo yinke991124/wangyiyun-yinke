@@ -1,12 +1,411 @@
+// 手机登录弹出框
+.telloginout {
+    width   : 100%;
+    height  : 100%;
+    position: absolute;
+    display : none;
+    z-index : 600;
+
+    // 点击手机登录弹出框
+    .tellogin {
+        box-shadow: 0 5px 16px rgba(0, 0, 0, 0.8);
+        background: white;
+        width     : 540px;
+        height    : 300px;
+        position  : absolute;
+        top       : 200px;
+        left      : 400px;
+
+
+        >p {
+            width        : 540px;
+            height       : 40px;
+            line-height  : 40px;
+            font-size    : 16px;
+            border-radius: 5px;
+            position     : absolute;
+            top          : -10px;
+            background   : #222222;
+            color        : #ccc;
+            text-indent  : 10px;
+            cursor       : move;
+
+            >span {
+                &:nth-of-type(1) {
+                    float: left;
+                }
+
+                &:nth-of-type(2) {
+                    float       : right;
+                    font-size   : 20px;
+                    margin-right: 10px;
+                    cursor      : pointer;
+                }
+            }
+        }
+
+        >.enter {
+            margin: 60px;
+
+            >div {
+                width : 230px;
+                height: 30px;
+                margin: 10px auto;
+
+                >input {
+                    width     : 180px;
+                    height    : 28px;
+                    border    : 1px solid #ccc;
+                    background: none;
+                    outline   : none;
+                    float     : left;
+                }
+
+                &:nth-of-type(1) {
+                    >span {
+                        width       : 50px;
+                        height      : 28px;
+                        border      : 1px solid #ccc;
+                        border-right: none;
+                        float       : left;
+                        padding     : 3px;
+
+                        >select {
+                            border: none;
+                        }
+                    }
+                }
+
+                &:nth-of-type(2) {
+                    >input {
+                        width: 230px;
+                    }
+                }
+
+                &:nth-of-type(3) {
+                    >input {
+                        width     : 15px;
+                        height    : 15px;
+                        margin-top: 5px;
+                    }
+
+                    >span {
+                        font-size: 12px;
+                        color    : #666666;
+                    }
+
+                    >a {
+                        font-size: 12px;
+                        color    : #666666;
+                        float    : right;
+                    }
+                }
+
+                &:nth-of-type(4) {
+                    >input {
+                        width        : 230px;
+                        height       : 35px;
+                        border-radius: 8px;
+                        background   : rgba(3, 104, 235, 0.863);
+                        color        : white;
+
+                        &:hover {
+                            opacity: 0.7;
+                        }
+                    }
+                }
+            }
+
+        }
+
+        >.bottom {
+            width     : 100%;
+            height    : 50px;
+            background: rgb(233, 232, 232);
+            margin-top: -20px;
+            padding   : 15px 0;
+
+            >a {
+                color    : rgb(81, 124, 241);
+                font-size: 12px;
+
+                &:nth-of-type(1) {
+                    float      : left;
+                    margin-left: 10px;
+                }
+
+                &:nth-of-type(2) {
+                    float       : right;
+                    color       : #666666;
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+
+}
+
+// 注册弹出框
+.reg {
+    width   : 100%;
+    height  : 100%;
+    position: absolute;
+    display : none;
+    z-index : 800;
+
+    .tellogin {
+        box-shadow: 0 5px 16px rgba(0, 0, 0, 0.8);
+        background: white;
+        width     : 540px;
+        height    : 300px;
+        position  : absolute;
+        top       : 200px;
+        left      : 400px;
+
+
+        >p {
+            width        : 540px;
+            height       : 40px;
+            line-height  : 40px;
+            font-size    : 16px;
+            border-radius: 5px;
+            position     : absolute;
+            top          : -10px;
+            background   : #222222;
+            color        : #ccc;
+            text-indent  : 10px;
+            cursor       : move;
+
+            >span {
+                &:nth-of-type(1) {
+                    float: left;
+                }
+
+                &:nth-of-type(2) {
+                    float       : right;
+                    font-size   : 20px;
+                    margin-right: 10px;
+                    cursor      : pointer;
+                }
+            }
+        }
+
+        >.enter {
+            margin: 40px 60px 0px;
+
+            >div {
+                width : 230px;
+                height: 30px;
+                margin: 20px auto;
+
+                >p {
+                    font-size: 12px;
+                    color    : #666666;
+                    padding  : 10px 0;
+                }
+
+                >input {
+                    width     : 180px;
+                    height    : 28px;
+                    border    : 1px solid #ccc;
+                    background: none;
+                    outline   : none;
+                    float     : left;
+                    padding   : 0 5px;
+                }
+
+                &:nth-of-type(1) {
+                    >span {
+                        width       : 50px;
+                        height      : 28px;
+                        border      : 1px solid #ccc;
+                        border-right: none;
+                        float       : left;
+                        padding     : 3px;
+
+                        >select {
+                            border: none;
+                        }
+                    }
+                }
+
+                &:nth-of-type(2) {
+                    >input {
+                        width: 230px;
+                    }
+                }
+
+                &:nth-of-type(3) {
+                    >input {
+                        width     : 230px;
+                        margin-top: 20px;
+                        background: rgb(26, 76, 241);
+                    }
+                }
+
+
+            }
+        }
+
+
+        >.bottom {
+            width     : 100%;
+            height    : 50px;
+            background: rgb(233, 232, 232);
+            margin-top: 100px;
+            padding   : 15px 0;
+            border-top: 1px solid #ccc;
+
+            >a {
+                color      : rgb(81, 124, 241);
+                font-size  : 12px;
+                float      : left;
+                margin-left: 10px;
+            }
+        }
+    }
+}
+
+// 注册，号码已注册弹出框
+.successout {
+    width   : 100%;
+    height  : 100%;
+    position: absolute;
+    display : none;
+    z-index : 800;
+
+    .successin {
+        box-shadow: 0 5px 16px rgba(0, 0, 0, 0.8);
+        background: white;
+        width     : 540px;
+        height    : 300px;
+        position  : absolute;
+        top       : 200px;
+        left      : 400px;
+
+        >p {
+            width        : 540px;
+            height       : 40px;
+            line-height  : 40px;
+            font-size    : 16px;
+            border-radius: 5px;
+            position     : absolute;
+            top          : -10px;
+            background   : #222222;
+            color        : #ccc;
+            text-indent  : 10px;
+            cursor       : move;
+
+            >span {
+                &:nth-of-type(1) {
+                    float: left;
+                }
+
+                &:nth-of-type(2) {
+                    float       : right;
+                    font-size   : 20px;
+                    margin-right: 10px;
+                    cursor      : pointer;
+                }
+            }
+        }
+        >.enter {
+            margin-top: 100px;
+            text-align: center;
+        }
+        >.bottom {
+            margin-top: 40px;
+            padding: 0 220px;
+            >a {
+                display: block;
+                text-align: center;
+                line-height: 30px;
+                width: 80px;
+                height: 30px;
+                border-radius: 10px;
+                background: rgb(27, 141, 248);
+            }
+        }
+
+    }
+}
+// 注册成功
+.regsucc {
+    width   : 100%;
+    height  : 100%;
+    position: absolute;
+    display : none;
+    z-index : 800;
+
+    .regsuccin {
+        box-shadow: 0 5px 16px rgba(0, 0, 0, 0.8);
+        background: white;
+        width     : 540px;
+        height    : 300px;
+        position  : absolute;
+        top       : 200px;
+        left      : 400px;
+
+        >p {
+            width        : 540px;
+            height       : 40px;
+            line-height  : 40px;
+            font-size    : 16px;
+            border-radius: 5px;
+            position     : absolute;
+            top          : -10px;
+            background   : #222222;
+            color        : #ccc;
+            text-indent  : 10px;
+            cursor       : move;
+
+            >span {
+                &:nth-of-type(1) {
+                    float: left;
+                }
+
+                &:nth-of-type(2) {
+                    float       : right;
+                    font-size   : 20px;
+                    margin-right: 10px;
+                    cursor      : pointer;
+                }
+            }
+        }
+        >.enter {
+            margin-top: 100px;
+            text-align: center;
+        }
+        >.bottom {
+            margin-top: 40px;
+            padding: 0 220px;
+            >a {
+                display: block;
+                text-align: center;
+                line-height: 30px;
+                width: 80px;
+                font-size: 14px;
+                color: white;
+                height: 30px;
+                border-radius: 10px;
+                background: rgb(27, 141, 248);
+            }
+        }
+
+    }
+}
+
 #wangyi {
+    // display: none;
 
     // 头部
     >.topout {
-        width     : 100%;
-        height    : 70px;
-        float     : left;
-        background: #242424;
-        position  : relative;
+        width      : 100%;
+        height     : 70px;
+        float      : left;
+        background : #242424;
+        position   : relative;
+        user-select: none;
 
         >.topin {
             width     : 1100px;
@@ -134,172 +533,34 @@
                 float     : left;
                 text-align: center;
                 margin-top: 20px;
-                overflow: hidden;
+                overflow  : hidden;
 
                 >span {
                     height     : 32px;
                     font-size  : 12px;
                     color      : rgb(102, 100, 100);
                     line-height: 32px;
+                    cursor     : pointer;
 
                     &:hover {
                         text-decoration: underline;
                         color          : rgb(129, 127, 127);
                     }
-                }
-                &:hover .other {
-                    display: block;
-                }
 
-
-                >.other {
-                    width   : 540px;
-                    height  : 400px;
-                    position: fixed;
-                    top     : 150px;
-                    left    : 450px;
-                    display : none;
-                    background: white;
-                    box-shadow: 0 5px 16px rgba(0,0,0,0.8);
-
-                    >p {
-                        width        : 540px;
-                        height       : 40px;
-                        line-height  : 40px;
-                        font-size    : 16px;
-                        border-radius: 5px;
-                        position     : absolute;
-                        top          : -10px;
-                        background   : #222222;
-                        color        : #ccc;
-                        text-indent  : 10px;
-                    }
-
-                    >.enter {
-                        // width     : 540px;
-                        // height    : 330px;
-                        // padding   : 40px 0;
-                        // margin    : auto;
-                        // border    : 1px solid #ccc;
-                        // box-shadow: 2px 1px 10px #ccc;
-                        margin-top: 100px;
-
-                        >.left {
-                            width       : 300px;
-                            height      : 200px;
-                            border-right: 1px dotted #ccc;
-                            padding     : 0 40px;
-                            float       : left;
-
-                            >article {
-                                width          : 224px;
-                                height         : 120px;
-                                background     : url(../img/computer.png) no-repeat;
-                                background-size: contain;
-                            }
-
-                            >section {
-                                width        : 224px;
-                                height       : 30px;
-                                line-height  : 30px;
-                                text-align   : center;
-                                font-size    : 12px;
-                                border       : 1px solid #ccc;
-                                border-radius: 5px;
-                                margin-top   : 10px;
-
-                                &:nth-of-type(1) {
-                                    color     : white;
-                                    background: rgb(6, 177, 245);
-
-                                    &:hover {
-                                        background: rgba(6, 177, 245, 0.7);
-                                    }
-                                }
-
-                                &:nth-of-type(2) {
-                                    color     : white;
-                                    background: rgb(218, 215, 215);
-
-                                    &:hover {
-                                        background: rgb(238, 237, 237);
-                                    }
-                                }
-                            }
-                        }
-
-                        >.right {
-                            float     : left;
-                            width     : 187px;
-                            height    : 220px;
-                            margin-top: -15px;
-                            padding   : 3px 0 3px 40px;
-
-                            >.choice {
-                                >li {
-                                    padding: 12px 0;
-                                    text-align: left;
-
-                                    >.iconfont {
-                                        vertical-align: middle;
-                                        font-size     : 30px;
-                                        color         : #e62225;
-                                    }
-
-                                    >a {
-                                        vertical-align: middle;
-                                        margin-right  : 20px;
-
-                                        >span {
-                                            font-size: 12px;
-                                        }
-
-                                        &:hover {
-                                            text-decoration: underline;
-                                        }
-                                    }
-
-                                    &:nth-of-type(1) {
-                                        >.iconfont {
-                                            color: yellowgreen;
-                                        }
-                                    }
-
-                                    &:nth-of-type(2) {
-                                        >.iconfont {
-                                            color: rgb(25, 151, 201);
-                                        }
-                                    }
-                                }
-                            }
-                        }
-
-                        >.bottom {
-                            white-space: nowrap;
-                            float      : left;
-                            margin-left: 40px;
-                            margin-top : 30px;
-                            font-family: NotoSansHans-Regular;
-                            font-size  : 10px;
-                            color      : rgba(0, 0, 0, 0.40);
-                            line-height: 15px;
-
-                            >input {
-                                font-size  : 12px;
-                                color      : #333;
-                                font-family: Arial, Helvetica, sans-serif;
-                            }
-
-                            >a {
-                                color: rgb(23, 166, 223);
-
-                                &:hover {
-                                    text-decoration: underline;
-                                }
-                            }
-                        }
+                    &:nth-of-type(2) {
+                        width     : 200px;
+                        height    : 50px;
+                        display   : none;
+                        position  : fixed;
+                        top       : 100px;
+                        left      : 400px;
+                        background: rgba(0, 0, 0, 0.6)
                     }
                 }
+
+
+
+
             }
         }
     }
@@ -375,6 +636,7 @@
                         border       : 1px solid #ccc;
                         border-radius: 5px;
                         margin-top   : 10px;
+                        cursor       : pointer;
 
                         &:nth-of-type(1) {
                             color     : white;
@@ -469,29 +731,27 @@
         }
     }
 
+    // 点击手机登录弹出框over
 
+    // >footer {
+    //     >.footerin {
+    //         >.copy {
+    //             >p {
+    //                 >a {
+    //                     color    : #666666;
+    //                     font-size: 12px;
+    //                     padding  : 5px 0;
+    //                 }
 
-
-
-
-
-
->footer {
-    >.footerin {
-        >.copy {
-            >p {
-                &:nth-of-type(3) {
-                    float: left;
-                    color: #666666;
-                    margin-top: 10px;
-                }
-                >a {
-                    color: #666666;
-                }
-            }
-        }
-    }
-}
+    //                 &:nth-of-type(3) {
+    //                     float     : left;
+    //                     color     : #666666;
+    //                     margin-top: 10px;
+    //                 }
+    //             }
+    //         }
+    //     }
+    // }
 
     // 大框架的div
 }

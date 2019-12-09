@@ -1,0 +1,641 @@
+#wangyi {
+    >.addcarout {
+        width        : 100%;
+        height       : 70px;
+        display      : none;
+        position     : fixed;
+        top          : 0px;
+        background   : white;
+        border-bottom: 1px solid rgb(230, 227, 227);
+
+        >.addcarin {
+            width  : 1100px;
+            height : 70px;
+            padding: 20px 0;
+            margin : auto;
+
+            // top: 0;
+            >.img {
+                float: left;
+
+                >img {
+                    width : 50px;
+                    height: 50px;
+                }
+            }
+
+            >.description {
+                float      : left;
+                margin-left: 20px;
+                overflow   : hidden;
+
+                >p {
+                    &:nth-of-type(1) {
+                        width        : 300px;
+                        color        : rgb(53, 51, 51);
+                        font-size    : 18px;
+                        white-space  : nowrap;
+                        text-overflow: ellipsis;
+                    }
+
+                    &:nth-of-type(2) {
+                        color: #d33a31;
+                    }
+                }
+            }
+
+            >.btn {
+                float : right;
+                width : 350px;
+                height: 40px;
+
+                >.buyim {
+                    float: left;
+
+                    >a {
+                        display    : block;
+                        width      : 165px;
+                        height     : 40px;
+                        border     : 2px solid #d33a31;
+                        color      : #d33a31;
+                        text-align : center;
+                        line-height: 36px;
+                    }
+                }
+
+                >.addcar {
+                    float      : left;
+                    background : #d33a31;
+                    text-align : center;
+                    line-height: 40px;
+
+                    >a {
+                        display: block;
+                        width  : 165px;
+                        height : 40px;
+                        color  : white;
+                    }
+                }
+            }
+        }
+    }
+
+    // 弹出栏over
+
+    // 加购区
+
+    >.mainout {
+        width: 100%;
+        float: left;
+
+        >.mainin {
+            width : 1100px;
+            margin: auto;
+
+            >.title {
+                float        : left;
+                width        : 1100px;
+                height       : 80px;
+                padding-top  : 30px;
+                border-top   : 1px solid #ccc;
+                border-bottom: 1px solid black;
+                font-weight  : 600;
+
+                >a {
+                    font-size: 18px;
+                    color    : #333333;
+
+                    &:nth-of-type(2) {
+                        float       : right;
+                        margin-right: 40px;
+                        color       : #999999;
+                    }
+                }
+
+                >span {
+                    color    : #999999;
+                    font-size: 16px;
+                }
+            }
+
+            >.detail {
+                width     : 1100px;
+                float     : left;
+                margin-top: 20px;
+
+                // 左边商品图片
+                >.slider {
+                    float      : left;
+                    width      : 440px;
+                    height     : 600px;
+                    // overflow: hidden;
+                    position   : relative;
+
+                    // 放大镜
+                    .loupe {
+                        width     : 200px;
+                        height    : 200px;
+                        background: black;
+                        opacity   : 0.4;
+                        position  : absolute;
+                        z-index   : 300;
+                        display: none;
+                        cursor: move; 
+                    }
+
+
+
+                    >.bigimgout {
+                        width   : 440px;
+                        height  : 440px;
+                        overflow: hidden;
+                        float   : left;
+                        position: absolute;
+                        left    : 0;
+                        top     : 0;
+
+                        >span {
+                            width      : 30px;
+                            height     : 50px;
+                            font-size  : 40px;
+                            color      : #ccc;
+                            display    : none;
+                            position   : absolute;
+                            top        : 45%;
+                            user-select: none;
+
+                            &:nth-of-type(2) {
+                                right: 0;
+                            }
+                        }
+
+                        &:hover span {
+                            display: block;
+                            z-index: 200;
+                        }
+
+                        >.bigimgin {
+                            width   : 2200px;
+                            height  : 440px;
+                            float   : left;
+                            position: absolute;
+                            left    : 0;
+
+                            >ul {
+                                margin : 0;
+                                padding: 0;
+
+                                >li {
+                                    >img {
+                                        width : 440px;
+                                        height: 440px;
+                                        float : left;
+                                    }
+
+                                }
+                            }
+
+
+                        }
+                    }
+
+                    >.smallimgout {
+                        width   : 500px;
+                        height  : 190px;
+                        overflow: hidden;
+                        padding : 10px 10px;
+                        position: relative;
+                        top     : 75%;
+
+
+                        >.smallimgin {
+                            width : 800px;
+                            height: 76px;
+                            float : left;
+
+                            >ul {
+                                >li {
+                                    float: left;
+
+                                    >img {
+                                        width       : 76px;
+                                        height      : 76px;
+                                        border      : 1px solid #ccc;
+                                        margin-right: 10px;
+                                        float       : left;
+                                    }
+
+                                }
+
+                                .active {
+                                    >img {
+                                        border: 1px solid orange;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                // 左边商品图片over
+                // 放大镜
+                .loupeout {
+                    width     : 440px;
+                    height    : 536px;
+                    background: #333333;
+                    position: absolute;
+                    left:45%;
+                    z-index: 300;
+                    display: none;
+                    >img {
+                        width: 840px;
+                        height: 840px;
+                    }
+                }
+
+
+                // 右边文字说明
+                >.right {
+                    float: right;
+                    width: 580px;
+
+                    >div {
+                        width  : 100%;
+                        padding: 5px 0 5px;
+                        float  : left;
+                    }
+
+                    >.title {
+                        >span {
+                            font-size: 24px;
+                        }
+                    }
+
+                    >.information {
+                        color    : #999999;
+                        font-size: 14px;
+                    }
+
+                    >.price {
+                        font-size  : 26px;
+                        color      : #d33a31;
+                        font-weight: bolder;
+
+                        >span {
+                            font-size      : 16px;
+                            color          : #999999;
+                            margin-left    : 10px;
+                            font-weight    : normal;
+                            text-decoration: line-through;
+                        }
+                    }
+
+                    >.discount {
+                        font-size: 12px;
+                        columns  : #333333;
+
+                        >span {
+                            // width     : 100px;
+                            color        : #999999;
+                            float        : left;
+                            margin-top   : 7px;
+                        }
+
+
+                        >p {
+                            // width         : 520px;
+                            height           : 30px;
+                            // line-height   : 30px;
+                            border           : 1px solid #f8e2e0;
+                            background       : #fdf5f4;
+                            float            : left;
+                            margin-left      : 10px;
+                            padding          : 5px 10px;
+
+                            >span {
+                                color  : #333333;
+                                padding: 0 5px;
+
+                                &:nth-of-type(1) {
+                                    border: 1px solid #d33a31;
+                                    color : #d33a31;
+                                }
+                            }
+
+                            >a {
+                                color: #328ad4;
+                            }
+                        }
+
+                    }
+
+                    >.discountnone {
+                        display: none;
+                    }
+
+                    >.style,
+                    >.color,
+                    >.norms,
+                    >.material {
+                        >span {
+                            color     : #999999;
+                            font-size : 12px;
+                            margin-top: 27px;
+                            float     : left;
+                        }
+
+                        >ul {
+                            >li {
+                                float  : left;
+                                border : 1px solid #ccc;
+                                margin : 20px 10px;
+                                padding: 3px 20px;
+                                cursor : pointer;
+                            }
+                        }
+                    }
+
+                    >.stylenone,
+                    >.colornone,
+                    >.normsnone,
+                    >.materialnone {
+                        display: none;
+                    }
+
+                    >.num {
+                        >span {
+                            color     : #999999;
+                            font-size : 12px;
+                            margin-top: 27px;
+                            float     : left;
+                        }
+
+                        >.count {
+                            float      : left;
+                            border     : 1px solid #cccccc;
+                            border-left: none;
+                            text-align : center;
+                            margin     : 20px 20px;
+                            height     : 30px;
+
+                            >span {
+                                float      : left;
+                                width      : 50px;
+                                height     : 28px;
+                                line-height: 28px;
+                                font-size  : 26px;
+                                border-left: 1px solid #cccccc;
+                                cursor     : pointer;
+                                user-select: none;
+                            }
+
+                            >.num {
+                                float      : left;
+                                width      : 50px;
+                                height     : 27px;
+                                border     : none;
+                                border-left: 1px solid #cccccc;
+                                outline    : none;
+                                text-align : center;
+                            }
+                        }
+                    }
+
+
+                    >.service {
+                        color    : #999999;
+                        font-size: 12px;
+
+                        >span {
+                            float: left;
+                        }
+
+                        >ul {
+                            float: left;
+
+                            >li {
+                                float      : left;
+                                margin-left: 30px;
+                                white-space: normal;
+                                position   : relative;
+
+                                >a {
+                                    font-size: 12px;
+
+                                    &::after {
+                                        content         : "";
+                                        position        : absolute;
+                                        top             : 7px;
+                                        left            : -8px;
+                                        width           : 3px;
+                                        height          : 3px;
+                                        border-radius   : 100%;
+                                        background-color: #d33931e5;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    >.servicenone {
+                        display: none;
+                    }
+
+                    //service
+
+                    >.go {
+                        padding: 20px;
+
+                        >.buyim {
+                            float: left;
+
+                            >a {
+                                display    : block;
+                                width      : 165px;
+                                height     : 40px;
+                                border     : 2px solid #d33a31;
+                                color      : #d33a31;
+                                text-align : center;
+                                line-height: 36px;
+                            }
+                        }
+
+                        >.addcar {
+                            float      : left;
+                            width      : 165px;
+                            height     : 40px;
+                            background : #d33a31;
+                            text-align : center;
+                            line-height: 40px;
+                            margin-left: 20px;
+
+                            >a {
+                                color: white;
+                            }
+                        }
+                    }
+                }
+            }
+
+            // 右边文字说明over
+        }
+    }
+
+    // 加购区over
+
+    // 商品详情
+    >.moreout {
+        width: 100%;
+        float: left;
+
+        >.morein {
+            width     : 1100px;
+            margin    : auto;
+            margin-top: 50px;
+
+            >.left {
+                width: 60%;
+                float: left;
+
+                >.title {
+                    float        : left;
+                    width        : 100%;
+                    height       : 80px;
+                    padding-top  : 30px;
+                    border-bottom: 1px solid black;
+                    font-weight  : 600;
+
+                    >a {
+                        font-size: 18px;
+                        color    : #333333;
+                    }
+
+                    >span {
+                        color    : #999999;
+                        font-size: 16px;
+                    }
+                }
+
+                >.show {
+                    float     : left;
+                    width     : 100%;
+                    margin-top: 20px;
+                }
+
+                >.some {
+                    float        : left;
+                    width        : 100%;
+                    height       : 150px;
+                    border       : 1px solid pink;
+                    color        : pink;
+                    border-radius: 10px;
+                    margin-top   : 20px;
+                    line-height  : 150px;
+                    font-size    : 20px;
+                    font-family  : "幼圆";
+                    text-align   : center;
+                }
+            }
+
+            >.right {
+                float      : left;
+                margin-left: 10%;
+                width      : 30%;
+
+                >.title {
+                    float        : left;
+                    width        : 100%;
+                    height       : 80px;
+                    padding-top  : 30px;
+                    border-bottom: 1px solid black;
+                    font-weight  : 600;
+
+                    >a {
+                        font-size: 18px;
+                        color    : #333333;
+                    }
+                }
+
+                >ul {
+                    float: left;
+
+                    >li {
+                        padding: 20px 0;
+
+                        >img {
+                            width       : 100px;
+                            height      : 100px;
+                            margin-right: 20px;
+                            float       : left;
+                        }
+
+                        >div {
+                            float    : left;
+                            height   : 100px;
+                            padding  : 20px 0;
+                            font-size: 14px;
+
+                            >span {
+                                &:nth-of-type(1) {
+                                    border : 1px solid #d33a31;
+                                    padding: 0 4px;
+                                    color  : #d33a31;
+                                }
+                            }
+
+                            >p {
+                                margin-top: 30px;
+                                font-size : 18px;
+                                color     : #d33a31;
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+
+
+    // 商品详情over
+
+
+    // 购买须知
+
+    >.noticeout {
+        width     : 100%;
+        float     : left;
+        margin-top: 50px;
+
+        >.noticein {
+            width : 1100px;
+            margin: auto;
+
+            >div {
+                width  : 100%;
+                float  : left;
+                padding: 30px;
+
+                >h4 {
+                    font-size: 14px;
+                    color    : #666;
+                    padding  : 5px 0;
+                }
+
+                >h6 {
+                    font-size  : 14px;
+                    color      : #707070;
+                    font-weight: normal;
+                    padding    : 5px 0;
+                }
+            }
+        }
+    }
+
+
+    // 购买须知over
+
+
+
+    // 大框架div
+}

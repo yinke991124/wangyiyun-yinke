@@ -6,21 +6,143 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>登录页</title>
-    <link rel="stylesheet" href="../style/common.css">
     <link rel="stylesheet" href="../style/login.css">
-    <link rel="stylesheet" href="../../node_modules/font/iconfont.css">
+    <link rel="stylesheet" href="../font/iconfont.css">
+    <link rel="stylesheet" href="../style/common.css">
     <script src="../../node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="../js/lib/reg.html.js"></script>
+    <script src="../../node_modules/requirejs/require.js" data-main="../js/loginReg.main"></script>
     <!-- <link rel="stylesheet" href="//at.alicdn.com/t/font_1510270_zejbtglu0g.css"> -->
+
+
+    <!-- <script>
+        window.onload = function() {
+            console.log($('#agree'))
+        }
+    </script> -->
+
 </head>
 
 <body>
+    <!-- 登录方式彈出框 -->
+    <!-- <div class="tanchukuang">
+    </div> -->
+
+    <!-- 手机号登录页弹出框 -->
+    <div class="telloginout">
+        <div class="tellogin">
+            <p>
+                <span>手机号登录</span>
+                <span class="del">&times;</span>
+            </p>
+            <div class="enter">
+                <div>
+                    <span>
+                        <select name="" id="">
+                            <option value="1">+86</option>
+
+                            <option value="1">lalal</option>
+                            <option value="1">lalal</option>
+                        </select>
+                    </span>
+                    <input type="text" name="phone" id="phone" placeholder="请输入手机号">
+                </div>
+                <div>
+                    <input type="password" name="password" id="password" placeholder="请输入密码">
+                </div>
+                <div>
+                    <input type="checkbox" name="" id="" checked>
+                    <span>自动登陆</span>
+                    <a href="./template/forget.html">忘记密码？</a>
+                </div>
+                <div>
+                    <input type="button" value="登录" id="sub">
+                </div>
+
+            </div>
+            <div class="bottom">
+                <a href="javascript:;">>其他登录方式</a>
+                <a href="javascript:;">没有账号？返回注册></a>
+            </div>
+        </div>
+    </div>
+    <!-- 注册弹出框 -->
+    <div class="reg">
+        <div class="tellogin">
+            <p>
+                <span>手机号注册</span>
+                <span class="del">&times;</span>
+            </p>
+            <div class="enter">
+                <div>
+                    <p>手机号：</p>
+                    <span>
+                        <select name="" id="">
+                            <option value="1">+86</option>
+
+                            <option value="1">lalal</option>
+                            <option value="1">lalal</option>
+                        </select>
+                    </span>
+                    <input type="tel" name="telnum" id="telnum" placeholder="请输入手机号">
+                </div>
+                <div>
+                    <p>密码：</p>
+                    <input type="password" name="password" id="password1" placeholder="设置密码，不少于6位">
+                </div>
+                <div>
+                    <input id="next" type="button" value="下一步">
+                </div>
+            </div>
+            <div class="bottom">
+                <a href="javascript:;">>返回登录</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 已注册弹出框 -->
+    <div class="successout">
+        <div class="successin">
+            <p>
+                <span>手机号注册</span>
+                <span class="del">&times;</span>
+            </p>
+            <div class="enter">
+                <p>该手机号与云音乐账号已绑定，
+                    <br><br>以后你可以直接用该手机号+密码登录</p>
+
+            </div>
+            <div class="bottom">
+                <!-- 跳转成功页面 -->
+                <a href="">知道了</a>
+            </div>
+        </div>
+    </div>
+    <!-- 注册成功 -->
+
+    <div class="regsucc">
+        <div class="regsuccin">
+            <p>
+                <span>手机号注册</span>
+                <span class="del">&times;</span>
+            </p>
+            <div class="enter">
+                <p>注册成功！</p>
+            </div>
+            <div class="bottom">
+                <!-- 跳转成功页面 -->
+                <a href="">开启云音乐</a>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
     <div id="wangyi">
         <div class="topout">
             <div class="topin">
                 <a href="./wangyiyun.html" class="logo">
                     <span class="iconfont iconwangyiyunyinle"></span>
-                    <span>网易云音乐</span>
+                    <span>网易云音乐商城</span>
                 </a>
                 <ul class="menu">
                     <li>
@@ -50,66 +172,13 @@
                 <a href="" class="creater">创作者中心</a>
                 <aside>
                     <span class="login-btn-top">登录</span>
-                    <div class="other">
-                        <p>登录</p>
-                        <div class="enter">
-                            <div class="left">
-                                <!-- 图片 -->
-                                <article></article>
-                                <!-- 按钮 -->
-                                <section class="btn1 login">手机号登录</section>
-                                <section class="btn1 reg">注册</section>
-                            </div>
-                            <div class="right">
-                                <ul class="choice">
-                                    <li>
-
-                                        <span class="iconfont iconweixin"></span>
-                                        <a href="">
-                                            <span>微信登录</span>
-                                        </a>
-                                    </li>
-                                    <li>
-
-                                        <span class="iconfont iconQQ"></span>
-                                        <a href="">
-                                            <span>QQ登录</span>
-                                        </a>
-                                    </li>
-                                    <li>
-
-                                        <span class="iconfont iconweibo"></span>
-                                        <a href="">
-                                            <span>微博登录</span>
-                                        </a>
-                                    </li>
-                                    <li>
-
-                                        <span class="iconfont iconyi1"></span>
-                                        <a href="">
-                                            <span>网易邮箱账号登录</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="bottom">
-                                <input type="checkbox" name="" id="">
-                                <label>同意</label>
-                                <a href="">《服务条款》</a>
-                                <a href="">《隐私政策》</a>
-                                <a href="">《儿童隐私政策》</a>
-                            </div>
-                        </div>
-                    </div>
                 </aside>
             </div>
         </div>
         <!-- 顶部over -->
-
-
         <!-- 线 -->
         <div class="lineout">
-            <div class="lineout"></div>
+            <div class="linein"></div>
         </div>
         <!-- 线over -->
 
@@ -121,8 +190,8 @@
                         <!-- 图片 -->
                         <article></article>
                         <!-- 按钮 -->
-                        <section class="btn1">手机号登录</section>
-                        <section class="btn1">注册</section>
+                        <section class="loginbtn">手机号登录</section>
+                        <section class="regbtn">注册</section>
                     </div>
                     <div class="right">
                         <ul class="choice">
@@ -157,7 +226,7 @@
                         </ul>
                     </div>
                     <div class="bottom">
-                        <input type="checkbox" name="" id="">
+                        <input type="checkbox" name="" id="agree">
                         <label>同意</label>
                         <a href="">《服务条款》</a>
                         <a href="">《隐私政策》</a>
@@ -169,61 +238,8 @@
 
 
 
-        <!-- 底部 -->
-        <footer>
-            <footer class="footerin">
-                <div class="copy">
-                    <p>
-                        <a href="">关于网易</a>
-                        <span>｜</span>
-                        <a href="">客户服务</a>
-                        <span>｜</span>
-                        <a href="">服务条款</a>
-                        <span>｜</span>
-                        <a href="">网站导航</a>
-                        <span>｜</span>
-                        <a href="">意见反馈</a>
-                    </p>
-                    <p>
-                        <span>网易公司版权所有&copy1997-2019</span> 杭州乐读科技有限公司运营：
-                        <a href="">浙网文[2015] 0415-135号</a>
-                    </p>
-                    <p>
-                        <span>违法和不良信息举报电话：0571-89853516</span> 举报邮箱：
-                        <a href="">ncm5990@163.com</a>
-                    </p>
-                </div>
 
-                <ul>
-                    <li>
-                        <a href="">
-                            <span class="iconfont iconalbum"></span>
-                            <span>独立音乐人</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <span class="iconfont iconwangyiyunyinle"></span>
-                            <span>音乐专栏</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <span class="iconfont iconhuatong1"></span>
-                            <span>自媒体</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <span class="iconfont iconzanshang"></span>
-                            <span>赞赏</span>
-                        </a>
-                    </li>
-                </ul>
-            </footer>
-        </footer>
 
-        <!-- 底部over -->
         <!-- 大框架 -->
     </div>
 

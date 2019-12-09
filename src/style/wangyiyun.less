@@ -63,7 +63,7 @@
                     margin-left: 30px;
                 }
 
-                >.count {
+                >.count1 {
                     width        : 18px;
                     height       : 18px;
                     background   : #e62225;
@@ -78,19 +78,25 @@
                 }
             }
 
-            >.login {
+            >.login,
+            .succeed {
                 float      : left;
                 height     : 36px;
                 margin-left: 40px;
                 margin-top : 10px;
                 line-height: 36px;
                 text-align : center;
+                display    : block;
+               
 
                 >span {
                     width    : 36px;
                     height   : 36px;
                     font-size: 14px;
                     float    : left;
+                    border-radius: 50%!important;
+                    overflow: hidden!important;
+                   
                 }
 
                 >.jiantou {
@@ -114,48 +120,74 @@
                         display: none;
                     }
 
-                    // 菜单
-                    >.menu {
-                        width     : 160px;
-                        background: white;
+                    >.menu1 {
+                        background: blue;
+                        width     : 200px;
                         position  : absolute;
-                        right     : -40px;
-                        top       : 50px;
+                        right     : -90px;
+                        top       : 60px;
+                        display: none;
                         box-shadow: 3px 3px 5px rgb(109, 107, 107);
-                        display   : none;
-                        z-index   : 300;
-
-                        >.trilateral {
-                            width        : 15px;
-                            border-top   : 15px solid transparent;
-                            border-left  : 15px solid transparent;
-                            border-right : 15px solid transparent;
-                            border-bottom: 15px solid rgba(218, 210, 210);
-                            // z-index   : 19;
-                            position     : absolute;
-                            top          : -25px;
-                            left         : 60px;
-                        }
-
                         >ul {
-                            text-align: center;
+                            text-align   : center;
+                            position     : absolute;
+                            z-index      : 900;
+                            background   : white;
+                            border       : 1px solid #ccc;
+                            border-radius: 15px;
 
                             >li {
-                                padding   : 5px 20px;
+                                padding   : 3px 25px;
                                 text-align: left;
                                 font-size : 14px;
 
                                 >a {
                                     >.iconfont {
-                                        color: rgb(160, 157, 157);
+                                        color       : rgb(160, 157, 157);
+                                        margin-right: 20px;
                                     }
                                 }
                             }
                         }
                     }
 
-                    
+                    // 菜单
+                    >.menu {
+                        width     : 200px;
+                        background: white;
+                        position  : absolute;
+                        right     : -100px;
+                        top       : 30px;
+                        box-shadow: 3px 3px 5px rgb(109, 107, 107);
+                        display   : none;
+                        z-index   : 300;
+
+                        >ul {
+                            text-align   : center;
+                            position     : absolute;
+                            z-index      : 900;
+                            background   : white;
+                            border       : 1px solid #ccc;
+                            border-radius: 15px;
+
+                            >li {
+                                padding   : 3px 25px;
+                                text-align: left;
+                                font-size : 14px;
+
+                                >a {
+                                    >.iconfont {
+                                        color       : rgb(160, 157, 157);
+                                        margin-right: 20px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+
                 }
+
                 &:hover .iconxiala {
                     display: none;
                 }
@@ -176,74 +208,127 @@
 
     // banner
     >.bannerout {
-        width     : 100%;
-        height    : 480px;
-        background: rebeccapurple;
-        float     : left;
+        width        : 100%;
+        height       : 480px;
+        // background: rgb(175, 140, 211);
+        float        : left;
 
         >.bannerin {
-            width   : 1100px;
-            height  : 480px;
-            margin  : auto;
-            overflow: hidden;
-            position: relative;
+            width         : 100%;
+            // width      : 1100px;
+            // height     : 480px;
+            // margin     : auto;
+            // overflow   : hidden;
 
-            >.banner {
-                width : 1100px;
-                height: 480px;
-                margin: auto;
+            >#slider {
+                // width   : 1100px;
+                height     : 480px;
+                // margin  : auto;
+                position   : relative;
+                overflow   : hidden;
+                width      : 100%;
 
-                >li {
-                    float: left;
+                // &>div {
+                //     width   : 6600px;
+                //     position: absolute;
+
+                //     img {
+                //         float: left;
+                //     }
+                // }
+                &>ul {
+                    width     : 8960px;
+                    position  : absolute;
+                    list-style: none;
+
+                    >li {
+                        width     : 1280px;
+                        height    : 480px;
+                        text-align: center;
+                        float     : left;
+
+                        &:nth-of-type(1) {
+                            background: #1e0002;
+                        }
+
+                        &:nth-of-type(2) {
+                            background: #3d0101;
+                        }
+
+                        &:nth-of-type(3) {
+                            background: rgb(14, 13, 13);
+                        }
+
+                        &:nth-of-type(4) {
+                            background: #f9ccf7;
+                        }
+
+                        &:nth-of-type(5) {
+                            background: #7588d5;
+                        }
+
+                        &:nth-of-type(6) {
+                            background: #0e2b4b;
+                        }
+
+                        >img {
+                            margin: auto;
+                        }
+                    }
                 }
-            }
 
-            >span {
-                width : 40px;
-                height: 60px;
-                ;
-                opacity    : 0.3;
-                background : black;
-                position   : absolute;
-                line-height: 50px;
-                text-align : center;
-                font-size  : 50px;
-                color      : #ccc;
-                cursor     : pointer;
+                >span {
+                    width : 40px;
+                    height: 60px;
+                    ;
+                    opacity    : 0.3;
+                    background : black;
+                    position   : absolute;
+                    line-height: 50px;
+                    text-align : center;
+                    font-size  : 50px;
+                    color      : #ccc;
+                    cursor     : pointer;
 
-                &:nth-of-type(1) {
-                    top : 45%;
-                    left: 10px;
+                    &:nth-of-type(1) {
+                        top : 45%;
+                        left: 10px;
+                    }
+
+                    &:nth-of-type(2) {
+                        top  : 45%;
+                        right: 10px;
+                    }
+
+                    &:hover {
+                        opacity: 0.5;
+                        color  : white;
+                    }
                 }
 
-                &:nth-of-type(2) {
-                    top  : 45%;
-                    right: 10px;
-                }
 
-                &:hover {
-                    opacity: 0.5;
-                    color  : white;
-                }
-            }
+                >.points {
+                    position: absolute;
+                    bottom  : 50px;
+                    left    : 45%;
 
-            >.points {
-                position: absolute;
-                bottom  : 10px;
-                left    : 45%;
+                    >li {
+                        float           : left;
+                        width           : 5px;
+                        height          : 5px;
+                        border-radius   : 50%;
+                        // border       : 1px solid #ccc;
+                        background      : #ccc;
+                        margin-left     : 10px;
+                        cursor          : pointer;
+                    }
 
-                >li {
-                    float        : left;
-                    width        : 20px;
-                    height       : 20px;
-                    border-radius: 50%;
-                    border       : 1px solid #ccc;
-                    margin-left  : 10px;
-                    cursor       : pointer;
-                }
-
-                >.active {
-                    background: white;
+                    >.active {
+                        width        : 7px;
+                        height       : 5px;
+                        border-radius: 50%;
+                        background   : #e62225;
+                    }
                 }
             }
 
@@ -371,7 +456,8 @@
 
 
             // 编辑推荐
-            >.recommend {
+            >.recommend,
+            >.hotProduct {
                 width: 1100px;
 
                 >span {
@@ -388,12 +474,17 @@
                     float: left;
 
                     >li {
-                        float        : left;
-                        width        : 275px;
-                        height       : 382px;
-                        padding-right: 16px;
-                        cursor: pointer;
-                        position: relative;
+                        float           : left;
+                        width           : 263px;
+                        height          : 382px;
+                        // padding-right: 16px;
+                        margin-right    : 10px;
+                        cursor          : pointer;
+                        position        : relative;
+
+                        &:hover {
+                            box-shadow: -4px -4px 6px #ccc;
+                        }
 
                         >a {
                             width : 255px;
@@ -406,60 +497,39 @@
                                 background: rgb(228, 226, 226);
                             }
                         }
+
                         >.price {
-                            width: 60px;
-                            height: 60px;
-                            background: #e62225;
+                            width        : 60px;
+                            height       : 60px;
+                            background   : #e62225;
                             border-radius: 50%;
-                            position: absolute;
-                            top: 10px;
-                            left: 10px;
+                            position     : absolute;
+                            top          : 10px;
+                            left         : 10px;
+
                             >span {
-                                width: 60px;
-                                height: 15px;
-                                float: left;
-                                color: white;
+                                width      : 60px;
+                                height     : 15px;
+                                float      : left;
+                                color      : white;
                                 line-height: 15px;
-                                text-align: center;
-                                &:nth-of-type(1){
+                                text-align : center;
+
+                                &:nth-of-type(1) {
                                     font-size: 16px;
-                                    margin: 15px 0 5px;
+                                    margin   : 15px 0 5px;
                                 }
-                                &:nth-of-type(2){
-                                    font-size: 14px;
+
+                                &:nth-of-type(2) {
+                                    font-size      : 14px;
+                                    color          : #ccc;
                                     text-decoration: line-through;
                                 }
                             }
                         }
 
-                        &:nth-of-type(4) {
-                            >.bottom {
-                                >h3 {
-                                    >a {
-                                        width     : 100%;
-                                        text-align: center;
-                                    }
-                                }
-                            }
-                        }
-
-                        &:nth-of-type(5) {
-                            >.bottom {
-                                >h3 {
-                                    position: relative;
-
-                                    >a {
-                                        width      : 100%;
-                                        text-indent: 70px;
-                                        position   : absolute;
-                                        top        : 5px;
-                                    }
-                                }
-
-                                >p {
-                                    margin-top: 30px;
-                                }
-                            }
+                        >.pricenone {
+                            display: none;
                         }
 
                         >.bottom {
@@ -476,25 +546,31 @@
                                 text-align : center;
                                 font-weight: normal;
 
-                                >span {
-                                    font-size    : 12px;
-                                    border       : 1px solid #e62225;
-                                    border-radius: 2px;
-                                    color        : #e62225;
-                                    float        : left;
-                                    padding      : 0 3px;
-                                }
+
 
                                 >a {
-                                    width             : 220px;
-                                    text-align        : center;
-                                    font-size         : 14px;
-                                    float             : left;
-                                    display           : -webkit-box;
-                                    -webkit-box-orient: vertical;
-                                    -webkit-line-clamp: 2;
-                                    overflow          : hidden;
-                                    margin-left       : 5px;
+                                    width                   : 100%;
+                                    text-align              : center;
+                                    font-size               : 14px;
+                                    // float                : left;
+                                    display                 : -webkit-box;
+                                    -webkit-box-orient      : vertical;
+                                    -webkit-line-clamp      : 2;
+                                    overflow                : hidden;
+                                    margin-left             : 5px;
+
+                                    >.remark {
+                                        font-size       : 12px;
+                                        border          : 1px solid #e62225;
+                                        border-radius   : 2px;
+                                        color           : #e62225;
+                                        // float        : left;
+                                        padding         : 0 3px;
+                                    }
+
+                                    >.remarknone {
+                                        display: none;
+                                    }
                                 }
                             }
 
@@ -593,133 +669,6 @@
             }
 
             // 数字专辑over
-
-            // 热门商品
-            >.hotout {
-                width         : 100%;
-                float         : left;
-                padding-bottom: 50px;
-
-                >.hotin {
-                    width : 1100px;
-                    height: 300px;
-                    margin: auto;
-
-                    >span {
-                        width        : 1100px;
-                        font-size    : 24px;
-                        font-weight  : bolder;
-                        opacity      : 0.7;
-                        float        : left;
-                        margin-bottom: 20px;
-                    }
-
-                    >ul {
-                        width: 1100px;
-                        float: left;
-
-                        >li {
-                            float        : left;
-                            width        : 275px;
-                            height       : 382px;
-                            padding-right: 16px;
-
-                            >a {
-                                width : 255px;
-                                height: 263px;
-                                float : left;
-
-                                >img {
-                                    width     : 263px;
-                                    height    : 263px;
-                                    background: rgb(228, 226, 226);
-                                }
-                            }
-
-                            &:nth-of-type(4) {
-                                >.bottom {
-                                    >h3 {
-                                        >a {
-                                            width     : 100%;
-                                            text-align: center;
-                                        }
-                                    }
-                                }
-                            }
-
-                            &:nth-of-type(5) {
-                                >.bottom {
-                                    >h3 {
-                                        position: relative;
-
-                                        >a {
-                                            width      : 100%;
-                                            text-indent: 70px;
-                                            position   : absolute;
-                                            top        : 5px;
-                                        }
-                                    }
-
-                                    >p {
-                                        margin-top: 30px;
-                                    }
-                                }
-                            }
-
-                            >.bottom {
-                                width     : 263px;
-                                height    : 62px;
-                                background: white;
-                                margin-top: 10px;
-                                float     : left;
-
-                                >h3 {
-                                    width      : 263px;
-                                    float      : left;
-                                    padding    : 3px;
-                                    text-align : center;
-                                    font-weight: normal;
-
-                                    >span {
-                                        font-size    : 12px;
-                                        border       : 1px solid #e62225;
-                                        border-radius: 2px;
-                                        color        : #e62225;
-                                        float        : left;
-                                        padding      : 0 3px;
-                                    }
-
-                                    >a {
-                                        width             : 220px;
-                                        text-align        : center;
-                                        font-size         : 14px;
-                                        float             : left;
-                                        display           : -webkit-box;
-                                        -webkit-box-orient: vertical;
-                                        -webkit-line-clamp: 2;
-                                        overflow          : hidden;
-                                        margin-left       : 5px;
-                                    }
-                                }
-
-                                p {
-                                    width     : 263px;
-                                    float     : left;
-                                    text-align: center;
-                                    color     : #e62225;
-                                    margin-top: 10px;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-
-            // 热门商品over
-
-
-
-
             //主要内容两个div
         }
     }
@@ -816,23 +765,27 @@
 
     // 右侧导航
     >.right {
-        width: 60px;
-        border: 1px solid #ccc;
+        width   : 60px;
+        border  : 1px solid #ccc;
         position: fixed;
-        top: 20%;
-        right: 0;
+        top     : 20%;
+        right   : 0;
+        display : none;
+
         >li {
             >a {
-                width: 60px;
-                height: 60px;
-                font-size: 14px;
-                text-align: center;
-                padding: 10px 0;
-                display: block;
-                border-bottom: 1px solid #ccc;  
+                width        : 60px;
+                height       : 60px;
+                font-size    : 14px;
+                text-align   : center;
+                padding      : 10px 0;
+                display      : block;
+                border-bottom: 1px solid #ccc;
             }
-            &:nth-of-type(6){
+
+            &:nth-of-type(6) {
                 background: rgb(68, 66, 66);
+
                 >a {
                     border: none;
                 }
@@ -841,4 +794,13 @@
     }
 
     // 大框架外包div
+}
+
+
+
+
+
+
+.none{
+    display: none!important;
 }

@@ -11,8 +11,13 @@
 * nav {
   list-style: none;
 }
+* .ovfHiden {
+  overflow: hidden;
+  height: 100%;
+}
 html {
   width: 100%;
+  position: relative;
 }
 html > body {
   width: 100%;

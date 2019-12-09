@@ -1,9 +1,327 @@
+.telloginout {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: none;
+  z-index: 600;
+}
+.telloginout .tellogin {
+  box-shadow: 0 5px 16px rgba(0, 0, 0, 0.8);
+  background: white;
+  width: 540px;
+  height: 300px;
+  position: absolute;
+  top: 200px;
+  left: 400px;
+}
+.telloginout .tellogin > p {
+  width: 540px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 16px;
+  border-radius: 5px;
+  position: absolute;
+  top: -10px;
+  background: #222222;
+  color: #ccc;
+  text-indent: 10px;
+  cursor: move;
+}
+.telloginout .tellogin > p > span:nth-of-type(1) {
+  float: left;
+}
+.telloginout .tellogin > p > span:nth-of-type(2) {
+  float: right;
+  font-size: 20px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.telloginout .tellogin > .enter {
+  margin: 60px;
+}
+.telloginout .tellogin > .enter > div {
+  width: 230px;
+  height: 30px;
+  margin: 10px auto;
+}
+.telloginout .tellogin > .enter > div > input {
+  width: 180px;
+  height: 28px;
+  border: 1px solid #ccc;
+  background: none;
+  outline: none;
+  float: left;
+}
+.telloginout .tellogin > .enter > div:nth-of-type(1) > span {
+  width: 50px;
+  height: 28px;
+  border: 1px solid #ccc;
+  border-right: none;
+  float: left;
+  padding: 3px;
+}
+.telloginout .tellogin > .enter > div:nth-of-type(1) > span > select {
+  border: none;
+}
+.telloginout .tellogin > .enter > div:nth-of-type(2) > input {
+  width: 230px;
+}
+.telloginout .tellogin > .enter > div:nth-of-type(3) > input {
+  width: 15px;
+  height: 15px;
+  margin-top: 5px;
+}
+.telloginout .tellogin > .enter > div:nth-of-type(3) > span {
+  font-size: 12px;
+  color: #666666;
+}
+.telloginout .tellogin > .enter > div:nth-of-type(3) > a {
+  font-size: 12px;
+  color: #666666;
+  float: right;
+}
+.telloginout .tellogin > .enter > div:nth-of-type(4) > input {
+  width: 230px;
+  height: 35px;
+  border-radius: 8px;
+  background: rgba(3, 104, 235, 0.863);
+  color: white;
+}
+.telloginout .tellogin > .enter > div:nth-of-type(4) > input:hover {
+  opacity: 0.7;
+}
+.telloginout .tellogin > .bottom {
+  width: 100%;
+  height: 50px;
+  background: #e9e8e8;
+  margin-top: -20px;
+  padding: 15px 0;
+}
+.telloginout .tellogin > .bottom > a {
+  color: #517cf1;
+  font-size: 12px;
+}
+.telloginout .tellogin > .bottom > a:nth-of-type(1) {
+  float: left;
+  margin-left: 10px;
+}
+.telloginout .tellogin > .bottom > a:nth-of-type(2) {
+  float: right;
+  color: #666666;
+  margin-right: 10px;
+}
+.reg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: none;
+  z-index: 800;
+}
+.reg .tellogin {
+  box-shadow: 0 5px 16px rgba(0, 0, 0, 0.8);
+  background: white;
+  width: 540px;
+  height: 300px;
+  position: absolute;
+  top: 200px;
+  left: 400px;
+}
+.reg .tellogin > p {
+  width: 540px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 16px;
+  border-radius: 5px;
+  position: absolute;
+  top: -10px;
+  background: #222222;
+  color: #ccc;
+  text-indent: 10px;
+  cursor: move;
+}
+.reg .tellogin > p > span:nth-of-type(1) {
+  float: left;
+}
+.reg .tellogin > p > span:nth-of-type(2) {
+  float: right;
+  font-size: 20px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.reg .tellogin > .enter {
+  margin: 40px 60px 0px;
+}
+.reg .tellogin > .enter > div {
+  width: 230px;
+  height: 30px;
+  margin: 20px auto;
+}
+.reg .tellogin > .enter > div > p {
+  font-size: 12px;
+  color: #666666;
+  padding: 10px 0;
+}
+.reg .tellogin > .enter > div > input {
+  width: 180px;
+  height: 28px;
+  border: 1px solid #ccc;
+  background: none;
+  outline: none;
+  float: left;
+  padding: 0 5px;
+}
+.reg .tellogin > .enter > div:nth-of-type(1) > span {
+  width: 50px;
+  height: 28px;
+  border: 1px solid #ccc;
+  border-right: none;
+  float: left;
+  padding: 3px;
+}
+.reg .tellogin > .enter > div:nth-of-type(1) > span > select {
+  border: none;
+}
+.reg .tellogin > .enter > div:nth-of-type(2) > input {
+  width: 230px;
+}
+.reg .tellogin > .enter > div:nth-of-type(3) > input {
+  width: 230px;
+  margin-top: 20px;
+  background: #1a4cf1;
+}
+.reg .tellogin > .bottom {
+  width: 100%;
+  height: 50px;
+  background: #e9e8e8;
+  margin-top: 100px;
+  padding: 15px 0;
+  border-top: 1px solid #ccc;
+}
+.reg .tellogin > .bottom > a {
+  color: #517cf1;
+  font-size: 12px;
+  float: left;
+  margin-left: 10px;
+}
+.successout {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: none;
+  z-index: 800;
+}
+.successout .successin {
+  box-shadow: 0 5px 16px rgba(0, 0, 0, 0.8);
+  background: white;
+  width: 540px;
+  height: 300px;
+  position: absolute;
+  top: 200px;
+  left: 400px;
+}
+.successout .successin > p {
+  width: 540px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 16px;
+  border-radius: 5px;
+  position: absolute;
+  top: -10px;
+  background: #222222;
+  color: #ccc;
+  text-indent: 10px;
+  cursor: move;
+}
+.successout .successin > p > span:nth-of-type(1) {
+  float: left;
+}
+.successout .successin > p > span:nth-of-type(2) {
+  float: right;
+  font-size: 20px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.successout .successin > .enter {
+  margin-top: 100px;
+  text-align: center;
+}
+.successout .successin > .bottom {
+  margin-top: 40px;
+  padding: 0 220px;
+}
+.successout .successin > .bottom > a {
+  display: block;
+  text-align: center;
+  line-height: 30px;
+  width: 80px;
+  height: 30px;
+  border-radius: 10px;
+  background: #1b8df8;
+}
+.regsucc {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: none;
+  z-index: 800;
+}
+.regsucc .regsuccin {
+  box-shadow: 0 5px 16px rgba(0, 0, 0, 0.8);
+  background: white;
+  width: 540px;
+  height: 300px;
+  position: absolute;
+  top: 200px;
+  left: 400px;
+}
+.regsucc .regsuccin > p {
+  width: 540px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 16px;
+  border-radius: 5px;
+  position: absolute;
+  top: -10px;
+  background: #222222;
+  color: #ccc;
+  text-indent: 10px;
+  cursor: move;
+}
+.regsucc .regsuccin > p > span:nth-of-type(1) {
+  float: left;
+}
+.regsucc .regsuccin > p > span:nth-of-type(2) {
+  float: right;
+  font-size: 20px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.regsucc .regsuccin > .enter {
+  margin-top: 100px;
+  text-align: center;
+}
+.regsucc .regsuccin > .bottom {
+  margin-top: 40px;
+  padding: 0 220px;
+}
+.regsucc .regsuccin > .bottom > a {
+  display: block;
+  text-align: center;
+  line-height: 30px;
+  width: 80px;
+  font-size: 14px;
+  color: white;
+  height: 30px;
+  border-radius: 10px;
+  background: #1b8df8;
+}
 #wangyi > .topout {
   width: 100%;
   height: 70px;
   float: left;
   background: #242424;
   position: relative;
+  user-select: none;
 }
 #wangyi > .topout > .topin {
   width: 1100px;
@@ -121,128 +439,20 @@
   font-size: 12px;
   color: #666464;
   line-height: 32px;
+  cursor: pointer;
 }
 #wangyi > .topout > .topin > aside > span:hover {
   text-decoration: underline;
   color: #817f7f;
 }
-#wangyi > .topout > .topin > aside:hover .other {
-  display: block;
-}
-#wangyi > .topout > .topin > aside > .other {
-  width: 540px;
-  height: 400px;
-  position: fixed;
-  top: 150px;
-  left: 450px;
+#wangyi > .topout > .topin > aside > span:nth-of-type(2) {
+  width: 200px;
+  height: 50px;
   display: none;
-  background: white;
-  box-shadow: 0 5px 16px rgba(0, 0, 0, 0.8);
-}
-#wangyi > .topout > .topin > aside > .other > p {
-  width: 540px;
-  height: 40px;
-  line-height: 40px;
-  font-size: 16px;
-  border-radius: 5px;
-  position: absolute;
-  top: -10px;
-  background: #222222;
-  color: #ccc;
-  text-indent: 10px;
-}
-#wangyi > .topout > .topin > aside > .other > .enter {
-  margin-top: 100px;
-}
-#wangyi > .topout > .topin > aside > .other > .enter > .left {
-  width: 300px;
-  height: 200px;
-  border-right: 1px dotted #ccc;
-  padding: 0 40px;
-  float: left;
-}
-#wangyi > .topout > .topin > aside > .other > .enter > .left > article {
-  width: 224px;
-  height: 120px;
-  background: url(../img/computer.png) no-repeat;
-  background-size: contain;
-}
-#wangyi > .topout > .topin > aside > .other > .enter > .left > section {
-  width: 224px;
-  height: 30px;
-  line-height: 30px;
-  text-align: center;
-  font-size: 12px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  margin-top: 10px;
-}
-#wangyi > .topout > .topin > aside > .other > .enter > .left > section:nth-of-type(1) {
-  color: white;
-  background: #06b1f5;
-}
-#wangyi > .topout > .topin > aside > .other > .enter > .left > section:nth-of-type(1):hover {
-  background: rgba(6, 177, 245, 0.7);
-}
-#wangyi > .topout > .topin > aside > .other > .enter > .left > section:nth-of-type(2) {
-  color: white;
-  background: #dad7d7;
-}
-#wangyi > .topout > .topin > aside > .other > .enter > .left > section:nth-of-type(2):hover {
-  background: #eeeded;
-}
-#wangyi > .topout > .topin > aside > .other > .enter > .right {
-  float: left;
-  width: 187px;
-  height: 220px;
-  margin-top: -15px;
-  padding: 3px 0 3px 40px;
-}
-#wangyi > .topout > .topin > aside > .other > .enter > .right > .choice > li {
-  padding: 12px 0;
-  text-align: left;
-}
-#wangyi > .topout > .topin > aside > .other > .enter > .right > .choice > li > .iconfont {
-  vertical-align: middle;
-  font-size: 30px;
-  color: #e62225;
-}
-#wangyi > .topout > .topin > aside > .other > .enter > .right > .choice > li > a {
-  vertical-align: middle;
-  margin-right: 20px;
-}
-#wangyi > .topout > .topin > aside > .other > .enter > .right > .choice > li > a > span {
-  font-size: 12px;
-}
-#wangyi > .topout > .topin > aside > .other > .enter > .right > .choice > li > a:hover {
-  text-decoration: underline;
-}
-#wangyi > .topout > .topin > aside > .other > .enter > .right > .choice > li:nth-of-type(1) > .iconfont {
-  color: yellowgreen;
-}
-#wangyi > .topout > .topin > aside > .other > .enter > .right > .choice > li:nth-of-type(2) > .iconfont {
-  color: #1997c9;
-}
-#wangyi > .topout > .topin > aside > .other > .enter > .bottom {
-  white-space: nowrap;
-  float: left;
-  margin-left: 40px;
-  margin-top: 30px;
-  font-family: NotoSansHans-Regular;
-  font-size: 10px;
-  color: rgba(0, 0, 0, 0.4);
-  line-height: 15px;
-}
-#wangyi > .topout > .topin > aside > .other > .enter > .bottom > input {
-  font-size: 12px;
-  color: #333;
-  font-family: Arial, Helvetica, sans-serif;
-}
-#wangyi > .topout > .topin > aside > .other > .enter > .bottom > a {
-  color: #17a6df;
-}
-#wangyi > .topout > .topin > aside > .other > .enter > .bottom > a:hover {
-  text-decoration: underline;
+  position: fixed;
+  top: 100px;
+  left: 400px;
+  background: rgba(0, 0, 0, 0.6);
 }
 #wangyi > .lineout {
   width: 100%;
@@ -306,6 +516,7 @@
   border: 1px solid #ccc;
   border-radius: 5px;
   margin-top: 10px;
+  cursor: pointer;
 }
 #wangyi > .mainout > .mainin > .enter > .left > section:nth-of-type(1) {
   color: white;
@@ -372,12 +583,4 @@
 }
 #wangyi > .mainout > .mainin > .enter > .bottom > a:hover {
   text-decoration: underline;
-}
-#wangyi > footer > .footerin > .copy > p:nth-of-type(3) {
-  float: left;
-  color: #666666;
-  margin-top: 10px;
-}
-#wangyi > footer > .footerin > .copy > p > a {
-  color: #666666;
 }
